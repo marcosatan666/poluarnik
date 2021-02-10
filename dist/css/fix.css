@@ -1,0 +1,78 @@
+.custom-control {
+    cursor: pointer
+}
+
+.custom-control-label::after {
+    left: -1rem;
+}
+
+.required.error {
+    border: solid 1px red;
+}
+
+/* #about {
+    padding-top: 6.66rem;
+} */
+
+#our-clients {
+    padding-top: 3.66rem;
+}
+
+#excursions:before {
+    background: url(/local/dist/images/dark_top.png) !important;
+    width: 100%;
+    background-position: center !important;
+}
+
+
+#buttonUp {
+    font-size: 2.33rem;
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 9999;
+    width: 1.66rem;
+    height: 1.66rem;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    -ms-border-radius: 100%;
+    width: 3.66rem;
+    height: 3.66rem;
+    line-height: 3rem;
+    transform: rotate(180deg);
+    /*margin: 0;
+    outline: 0;
+    color: #e6bd88;
+    line-height: 30px;
+    border-bottom: dashed 1px #e6bd88;
+    text-decoration: none;
+    padding: 0;
+    background: 0 0;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0;
+    -webkit-box-shadow: 0;
+    -moz-box-shadow: 0 2px 4px #999;
+    -o-box-shadow: 0 2px 4px #999;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    z-index: 99999;
+    */;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    background-color: #ffa200;
+    border: solid 2px #ffa200;
+    
+}
+#buttonUp  .icon-down{
+    background-size: 1.33rem;
+
+}
+
+
+

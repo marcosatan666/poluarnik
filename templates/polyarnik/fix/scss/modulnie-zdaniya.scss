@@ -1,0 +1,196 @@
+#h-mmenu li li:hover {
+
+    padding-left: 25px !important;
+   
+}
+
+.modulnie-zdaniya-body {
+    & .cost {
+        margin-bottom: -24rem;
+    }
+
+    & #angary_character {
+        z-index: 99!important;
+    }
+    &  #delivery {
+        background-color: transparent!important;
+    }
+}
+
+
+
+@media (min-width:1280px) and (max-width: 1600px){
+    .modulnie-zdaniya-body,
+    .modulnie-zdaniya-transpaki-body, 
+    .modulnie-zdaniya-administrative-body,
+    .modulnie-zdaniya-stolovie-body,
+    .modulnie-zdaniya-laundromats-body, 
+    .modulnie-zdaniya-offices-body,
+    .modulnie-zdaniya-hostels-body,
+    .vagon-doma-residential-body {
+        .site-header {
+            min-height: 950px;
+            background-size: 1800px;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 998;
+
+            .form-wrap {
+                margin-top: 0;
+            }
+
+        }
+    }
+}
+
+.modulnie-zdaniya-body,
+.modulnie-zdaniya-transpaki-body, 
+.modulnie-zdaniya-administrative-body,
+.modulnie-zdaniya-stolovie-body,
+.modulnie-zdaniya-laundromats-body, 
+.modulnie-zdaniya-offices-body,
+.modulnie-zdaniya-hostels-body,
+.vagon-doma-residential-body {
+    // .site-header {
+    //     min-height: 950px;
+    //     background-size: 1800px;
+    //     background-repeat: no-repeat;
+    //     position: relative;
+    //     z-index: 998;
+    //     .form-wrap {
+    //         margin-top: 0;
+    //     }
+
+    // }
+
+
+    .head-text  {
+        .bold {
+            &:nth-child(1) {
+                margin-bottom: 0;
+            }
+
+        }
+
+    }
+
+    #superstar {
+        background-image: url(/local/dist/images/png/superstar.png);
+        min-height: 760px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 999;
+      
+        top: -66px;
+        margin-bottom: -66px;
+    }
+
+    #angary_character {
+       
+        // background-image: url('/local/dist/images/angar_chars_bg3.jpg');
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1900px;
+        z-index: 2;
+        .comparison {
+            .card {
+                .card-title {
+                    font-size: 24px;
+                    color: #1c4da2;
+                    font-weight: 700;
+                    text-transform: none;
+                }
+                p {
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 16px;
+                    padding: 0.66rem 0;
+                    min-height: 4rem;
+                }
+                &:not(:first-child) {
+                    .card-footer {
+                        background-color: #E9F0F6;
+                    }
+                    .card-body {
+                        &:after {
+                            content: "";
+                            display: block;
+                            width: 66%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-top: 0;
+                            border-top: dashed 2px #DFDFDF;
+                        }
+                    }
+                }
+                .card-image {
+                    top: 0;
+                }
+                &:nth-child(2) {
+                    .card-image {
+                        top: 8px;
+                    }
+                    // max-width: 410px;
+                }
+                .card-body {
+                    min-height: 390px;
+                }
+            }
+        }
+    }
+
+    #about .container {
+        position: relative;
+        top: 0 !important;
+        margin-bottom: 0 !important;
+        z-index: 10;
+    }
+
+    #excursions {
+        top: 0;
+        padding-bottom: 380px;
+    }
+
+
+    #vacht_plans {
+      
+        // background-color: #E1EFF8;
+        position: relative;
+        margin-top: 6.66rem !important;
+        
+    }
+
+    
+}
+
+.modulnie-zdaniya-transpaki-body {
+
+    .site-header {
+     
+        background-size: 1900px, 2400px;
+      
+    }
+
+
+    #stages {
+        .card {
+            .card-img-top {
+                position: relative;
+                z-index: 2;
+                max-width: 410px;
+                height: 200px;
+                margin-bottom: 0;
+            }
+            .card-text {
+                padding-right: 85px;
+            }
+            max-width: 33%;
+            max-height: 600px;
+        }
+    }
+    .promo-exp {
+        top: 11.6rem;
+    }
+}

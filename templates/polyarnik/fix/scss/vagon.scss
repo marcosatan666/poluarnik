@@ -1,0 +1,418 @@
+    .vagon-doma-residential-body,
+    .vagon-doma-with-office-body,
+    .vagon-doma-shower-body,
+    .vagon-doma-laundromats-body,
+    .vagon-doma-office-body,
+    .vagon-doma-guard-post-body,
+    .vagon-doma-other-body,
+    .vagon-doma-transpaks-body,
+    .vagon-doma-comfortable-body,
+    .vagon-doma-steam-baths-body,
+    .vagon-doma-toilets-body,
+    .vagon-doma-dryers-body,
+    .vagon-doma-conference-hall-body,
+    .vagon-doma-kitchens-and-dining-rooms-body,
+    .vagon-doma-block-container-body,
+    .vagon-doma-stolovie-body,
+    .vagon-doma-body {
+        .site-header {
+            background-size: cover;
+            min-height: 970px;
+            z-index: 999;
+            &:before {
+                top: 690px;
+            }
+            .bold {
+                position: relative;
+                z-index: 2;
+                margin-bottom: 0;
+            }
+        }
+        #s05 {
+            .goods {
+                padding-bottom: 80px;
+                margin-bottom: -80px;
+                margin-right: -169px;
+                .card {
+                    max-width: 320px;
+                }
+            }
+            .title {
+                font-weight: bold;
+                min-height: 5rem;
+                font-size: 1rem;
+            }
+        }
+        #s02 .footer_title {
+            font-size: 18px;
+            font-weight: bold;
+            padding-top: 1.66rem;
+        }
+        #s02 .catalog .header img {
+            max-width: 355px;
+            position: relative;
+            left: 0;
+            margin-top: 15px;
+        }
+        #s02 .footer_table td:nth-of-type(1) span {
+            font-weight: 900;
+            color: #004199;
+        }
+        .cost {
+            .title-img {
+                position: relative;
+                left: 0;
+                top: 6rem;
+                max-width: 540px;
+            }
+            .form-wrap {
+                max-width: 360px;
+                left: 2.2rem;
+                top: 4.66rem;
+            }
+        }
+        #about {
+            position: relative;
+            padding-top: 0;
+            top: 0;
+            z-index: 101;
+            padding-bottom: 90px;
+        }
+        #our-clients {
+            padding-top: 0;
+        }
+
+        #vagon-ready {
+            padding-top: 60px;
+
+        }
+    }
+    
+    #vagon_top_catalog {
+        padding-bottom: 12rem;
+        .h1 {
+            text-transform: uppercase;
+            .c_orange {
+                font-weight: 600;
+            }
+        }
+        .catalog {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .good {
+            // width: 360px;
+            box-shadow: 6px 8px 44px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            padding-top: 20px;
+            position: relative;
+            background: #fff url("/local/images/card_header_rotated.png") no-repeat 0 0;
+            background-size: 390px;
+            text-align: center;
+            background-position: center 140px;
+            height: 300px;
+        }
+        .title {
+            color: #1c4da2;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 auto 1.66rem auto;
+            max-width: 72%;
+            span {
+                color: #ffa200;
+                font-weight: 400;
+                display: block;
+            }
+        }
+        .btn {
+            margin-top: 0;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            width: 321px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: 60px;
+        }
+        .img.top {
+            margin: 30px auto;
+        }
+        .img {
+            position: relative;
+            margin: 1.66rem 0;
+        }
+        .decor {
+            position: relative;
+            top: -8px;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: 600;
+            border: none;
+            margin: 0 -15px;
+            border-bottom-right-radius: 20px;
+            text-align: left;
+        }
+        .card-footer {
+            border-top: 0;
+        }
+    }
+    
+    #vagon_kp {
+        // .section-title {
+        //     &:before {
+        //         content: "";
+        //         display: inline-block;
+        //         width: 260px;
+        //         height: 88px;
+        //         background: url('/local/dist/images/big_arrow.png');
+        //         background-repeat: no-repeat;
+        //         position: absolute;
+        //         margin-top: 15rem;
+        //     }
+        // }
+    }
+    
+    .yes {
+        font-size: 0;
+        &:after {
+            content: "";
+            background-image: url('/local/images/green_check.svg');
+            display: inline-block;
+            font-size: 0;
+            height: 20px;
+            width: 20px;
+            background-size: contain;
+        }
+    }
+    
+    .no {
+        font-size: 0;
+        &:after {
+            content: "";
+            background-image: url('/local/images/red_close.svg');
+            display: inline-block;
+            font-size: 0;
+            height: 20px;
+            width: 20px;
+            background-size: contain;
+            position: relative;
+        }
+    }
+    
+    .vagon-doma-body {
+        #slider_wrap {
+            position: absolute;
+            left: -150px;
+            top: 160px;
+        }
+    }
+    
+    ///////////////////
+    .vagon-doma-residential-body,
+    .vagon-doma-with-office-body,
+    .vagon-doma-shower-body,
+    .vagon-doma-laundromats-body,
+    .vagon-doma-office-body,
+    .vagon-doma-guard-post-body,
+    .vagon-doma-other-body,
+    .vagon-doma-transpaks-body,
+    .vagon-doma-comfortable-body,
+    .vagon-doma-steam-baths-body,
+    .vagon-doma-toilets-body,
+    .vagon-doma-dryers-body,
+    .vagon-doma-conference-hall-body,
+    .vagon-doma-kitchens-and-dining-rooms-body,
+    .vagon-doma-block-container-body,
+    .vagon-doma-diselnie-body,
+    .vagon-doma-stolovie-body {
+        .site-header {
+            &:before {
+                top: 720px;
+            }
+        }
+        #slider_wrap {
+            top: -5rem;
+        }
+        #vagon-ready {
+            z-index: 999;
+        }
+        #about {
+            top: 0;
+        }
+        #our-clients {
+            padding-top: 0;
+            top: -8rem;
+        }
+        #map {
+            padding-top: 0;
+        }
+        #reviews {
+            padding-top: 0 !important;
+            top: 0 !important;
+        }
+        #excursions {
+            top: 0;
+            padding-bottom: 280px;
+        }
+        .cost {
+            padding-top: 290px;
+            margin-bottom: -22rem;
+        }
+    }
+    
+    .vagon-doma-diselnie-body {
+        .site-header {
+            .bold {
+                margin-bottom: 0;
+            }
+            &:before {
+                top: 680px;
+            }
+        }
+        .cost {
+            padding-top: 290px;
+            margin-bottom: 0;
+            margin-top: -12rem;
+            .form-wrap {
+                max-width: 320px;
+                left: 80px;
+                top: 120px;
+            }
+            &.cost-bks {
+                .doc-img {
+                    position: absolute;
+                    top: 0;
+                    margin-top: 224px;
+                    margin-left: 507px;
+                    left: 0;
+                }
+                .title-img {
+                    position: relative;
+                    left: 0;
+                    top: 3rem;
+                }
+            }
+        }
+        #s05 {
+            .goods {
+                padding-bottom: 80px;
+                margin-bottom: -80px;
+                margin-right: -169px;
+                .card {
+                    max-width: 320px;
+                }
+            }
+            .title {
+                font-weight: bold;
+                min-height: 5rem;
+                font-size: 1rem;
+            }
+        }
+        #s02 {
+            .catalog {
+                .block {
+                    position: relative;
+                    width: 370px;
+                }
+                .header {
+                    min-height: 400px !important;
+                    img {
+                        max-width: 336px;
+                        position: relative;
+                        left: 0;
+                        margin-top: -35px;
+                        margin-bottom: -40px;
+                    }
+                    .title {
+                        color: #004199;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+                }
+                .body {
+                    table {
+                        max-width: 360px;
+                        thead {
+                            tr {
+                                border-top: dashed 2px #e8f3f9;
+                                text-align: center;
+                                font-size: 16px;
+                                td {
+                                    font-weight: 900;
+                                }
+                                &:nth-child(2) {
+                                    font-size: 14px;
+                                    color: #004199;
+                                    td {
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                border-top: dashed 2px #e8f3f9;
+                            }
+                            td:nth-of-type(1) {
+                                width: 80px;
+                            }
+                            td:nth-of-type(2) {
+                                text-align: center;
+                                font-weight: 500;
+                            }
+                            td:nth-of-type(3),
+                            td:nth-of-type(4) {
+                                text-align: center;
+                                font-weight: 900;
+                            }
+                        }
+                    }
+                }
+                .foot-header {
+                    background-color: #e8f3f9;
+                    padding: 30px;
+                    .title {
+                        color: #004199;
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-align: center;
+                    }
+                    hr {
+                        width: 20px;
+                        margin: 10px auto;
+                        border-bottom: 1px solid #ffa200;
+                    }
+                }
+            }
+        }
+        .moduli_kp-transpaki {
+            &#vagon_kp {
+                // background-image: url("/local/images/forn_diesel_bg.png");
+                background-image: url("/local/dist/images/kp_transpak_bg.png"), url("/local/images/forn_diesel_bg.png");
+                top: 0;
+                padding-top: 12rem;
+                background-size: 1900px;
+            }
+        }
+
+
+        #about {
+
+            top: 100px;
+            margin-bottom: 150px;
+        }
+    }

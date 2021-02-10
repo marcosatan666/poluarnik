@@ -1,0 +1,85 @@
+$env: "dist_view";
+@import 'conf.scss';
+@import 'blocks/mob_menu.scss';
+
+
+.nav {
+    a {
+        &:after {
+            content: "";
+            position: absolute;
+            height: 20px;
+            width: 2px;
+            
+        }
+    }
+}
+.navTop {
+    position: relative;
+    left: -2.66rem;
+    a {
+        color: #000;
+        font-size: 15px;
+           &:after {
+                margin-top: 2px;
+                margin-left: 15px;
+                background: #c1daeb
+            }
+            &:nth-child(4) {
+                &:after {
+                    display: none;
+                }
+            }
+    }
+}
+.navMiddle {
+    a {
+        color: $color-blue;
+        font-size: 18px;
+        font-weight: 500;
+         &:after {
+                margin-top: 2px;
+                margin-left: 30px;
+                background: $color-blue
+            }
+            &:nth-child(6) {
+                &:after {
+                    display: none;
+                }
+            }
+    }
+}
+.top_list {
+    li {
+        list-style: none;
+        position: relative;
+        display: block;
+        padding: 0.33rem;
+        a {
+            font-weight: 600
+        }
+    }
+}
+.second_list {
+    position: relative;
+    left: 10px;
+    li {
+        list-style: none;
+        text-align: left;
+        display: block;
+        padding: 0.1rem 0.33rem;
+        width: 50%;
+        float: left;
+        padding-left: 20px;
+        &:before {
+            display: inline-block;
+            content: "";
+            width: 15px;
+            height: 8px;
+            background-image: url($dist_path+"images/svg/right.svg");
+            margin-top: 7px;
+            margin-left: -20px;
+            position: absolute;
+        }
+    }
+}

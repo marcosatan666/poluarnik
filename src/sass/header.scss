@@ -1,0 +1,82 @@
+@import 'conf.scss';
+@import 'icons.scss';
+@import 'head.text.scss';
+@import 'btns.scss';
+@import 'navs.scss';
+@import 'forms.scss';
+.site-header {
+    min-height: 900px;
+    background-image: url($dist_path+"images/main-page-head.png");
+    background-size: 1900px;
+    /* background-repeat: no-repeat; */
+    background-position: center 0rem;
+    /* background-position: center center; */
+    // .custom-control-label {
+    //     padding-left: 1rem;
+    // }
+    // .custom-control-label::before {
+    //     left: -1.33rem;
+    // }
+    .btn-grey {
+        width: 220px;
+        text-align: left;
+        margin-left: -0.66rem;
+        .icon {
+            position: absolute;
+            top: 0.66rem;
+            right: 0;
+        }
+        .icon-gerb {
+            background-size: 20px;
+            width: 20px
+        }
+    }
+    .contacts {
+        position: relative;
+        top: -0.66rem;
+    }
+    .address {
+        font-size: 12px;
+        font-weight: 600
+    }
+    @include respond-to(xs) {
+        .form-wrap {
+            margin: 0 auto;
+            max-width: 400px;
+        }
+    }
+    @include respond-to(max-md) {
+        background-size: cover;
+        min-height: auto;
+        .head-text .bold {
+            font-size: 1rem;
+        }
+        .h1 {
+            font-size: 22px;
+        }
+        .contacts {
+            top: 0.33rem;
+            left: 0.66rem
+        }
+    }
+}
+
+.tel {
+    font-size: 24px;
+    font-weight: 700;
+    .icon {
+        position: relative;
+        top: 0.33rem;
+        left: -0.66rem;
+        &.icon-phone {
+            width: 20px;
+            height: 30px;
+            background-size: 20px;
+        }
+    }
+}
+
+.email {
+    font-weight: 600;
+    color: $color-blue
+}

@@ -1,0 +1,27 @@
+/*=============================================================*/
+button:focus {
+  outline: none; }
+
+.btn .icon {
+  position: absolute; }
+
+.btn-grey {
+  background-color: #ccd1d7;
+  height: 50px;
+  border-radius: 4px;
+  color: #044587;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1) !important; }
+
+.btn-orange {
+  border: none;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1) !important;
+  border-radius: 4px !important;
+  background-color: #ffa200 !important;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  padding: 20px; }

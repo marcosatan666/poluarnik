@@ -1,0 +1,215 @@
+@import 'conf.scss';
+@import 'style.scss';
+@import 'blocks/superstar.scss';
+@import 'blocks/pav_advantages.scss';
+@import 'blocks/pav_cost.scss';
+@import 'blocks/stages.scss';
+@import 'blocks/slide_items.scss';
+@import 'blocks/3d_visual.scss';
+@import 'blocks/pav_visual.scss';
+@import 'blocks/delivery.scss';
+@import 'blocks/gallery.scss';
+@import 'blocks/excursions.scss';
+@import 'blocks/about.scss';
+@import 'blocks/our-clients.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/cost.scss';
+@import 'blocks/map.scss';
+
+/*only page*/
+
+// @import 'pages/pavs.scss';
+body {
+    background: #fdfbfc
+}
+
+.site-header {
+    background-image: url($dist_path+'images/png/pavilions/pavilion_head.png');
+    background-position: center;
+    .form-wrap {
+        margin-top: 75px
+    }
+}
+
+.advantages {
+    padding-bottom: 0;
+}
+
+#superstar {
+    // background: #fdfbfc;
+    background-image: url($dist_path+'images/png/superstar_pav.png');
+    background-position: center 160px;
+    padding-top: 160px;
+    position: relative;
+    top: -100px;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 160px;
+        margin-top: -220px;
+        z-index: 3;
+        background-image: url($dist_path+"images/png/superstar_bef_bg.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    .super_int {
+        color: #fdfbfc;
+    }
+    @include respond-to(xs) {
+        padding-top: 0;
+        position: relative;
+        top: 0;
+    }
+}
+
+#gallery {
+    .bg-wrap {
+        background: #ececef;
+        padding-bottom: 0px;
+    }
+    &:before {
+        // filter: grayscale(100%);
+        background: url($dist_path+"images/png/dark_top_pavs.png") no-repeat 50% 50%/contain;
+        background-size: cover;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 355px;
+        margin-top: -100px;
+        z-index: 3;
+        background: #fdfbfc;
+        background-image: url($dist_path+"images/png/dark_bot_pavs.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        -moz-transform: rotate(360deg);
+        /* Для Firefox */
+        -ms-transform: rotate(360deg);
+        /* Для IE */
+        -webkit-transform: rotate(360deg);
+        /* Для Safari, Chrome, iOS */
+        -o-transform: rotate(360deg);
+        /* Для Opera */
+        transform: rotate(360deg);
+    }
+}
+
+#about {
+    background: #fdfbfc;
+    position: relative;
+    padding-top: 0;
+    top: 100px;
+    z-index: 9;
+    padding-bottom: 170px;
+    .container {
+        margin-bottom: 0;
+        top: 2.66rem;
+    }
+    &:before {
+        height: 0;
+    }
+}
+
+#reviews {
+    .wrap {
+        background-color: #ececef;
+        padding-bottom: 140px;
+    }
+    &:after {
+        display: none;
+    }
+    &:before {
+        background-image: url($dist_path+"images/png/review_before_bg_pav.png");
+    }
+}
+
+#excursions {
+    background: #fdfbfc;
+    top: 0;
+    padding-bottom: 440px;
+    .container {
+        top: 160px;
+    }
+    &:before {
+        background-image: url($dist_path+"images/png/dark_top_pavs.png"); // background-repeat: no-repeat;
+        // background-size: contain;
+    }
+    &:after {
+        background-image: url($dist_path+"images/angar.png");
+        background-repeat: no-repeat; // background-size:1770px, contain;
+        background-position: 44% 580px;
+        height: 1050px;
+    }
+}
+
+#map {
+    padding-top: 0;
+    #j-map {
+        &:before {
+            background-image: url($dist_path+"images/pavs-map-transition.png");
+            top: -14rem;
+        }
+    }
+}
+
+@include respond-to(xs) {
+    .site-header {
+        background-image: url($dist_path+'images/png/pavilions/pavilion_head.png');
+        background-position: center top;
+        background-size: 1200px;
+        min-height: auto;
+        background-repeat: no-repeat;
+        .form-wrap {
+            margin-top: 15rem;
+        }
+    }
+    .advantages {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    #stages {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #slide_items {
+        padding-top: 0;
+    }
+    #stages {
+        .card-img-top {
+            position: relative;
+            top: -2.6rem;
+        }
+        .card .card-text {
+            padding-right: 0;
+        }
+    }
+    #stages .super_int {
+        top: 0;
+        left: 15px;
+    }
+    #excursions {
+        padding-bottom: 22.6rem;
+        .container {
+            top: 0;
+        }
+        &:before {
+            margin-top: -145px;
+        }
+    }
+    #reviews {
+        .wrap {
+            padding-bottom: 3.66rem;
+        }
+    }
+    #map {
+        padding-top: 0;
+    }
+}
+
+// background-image: url(graphic-to-be-filtered.jpg);
+// filter: grayscale(100%);

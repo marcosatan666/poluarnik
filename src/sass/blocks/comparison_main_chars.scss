@@ -1,0 +1,169 @@
+@import '../conf.scss';
+.comparison {
+    .card {
+        border: none;
+        position: relative;
+        z-index: 1;
+        .shadow {
+            box-shadow: 6px 8px 44px rgba(0, 0, 0, 0.15);
+        }
+        .card-title {
+            text-align: center;
+            font-size: 24px;
+            color: $color-blue2;
+            font-weight: 700;
+            text-transform: uppercase
+        }
+        .card-title {}
+        .card-body {
+            background-position: center -8px;
+        }
+        .card-image {
+            margin: 1.66rem auto;
+        }
+        p {
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 0.66rem 0;
+        }
+        .card-image {
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+            display: block;
+        }
+        .decor {
+            margin: 0 auto;
+            display: block;
+        }
+        .card-body {
+            background-image: url($dist_path+"images/png/moduli/card_head_r_bg.png");
+            min-height: 360px;
+            background-repeat: no-repeat;
+            margin: 0 -15px;
+            border-radius: 0;
+            background-size: contain;
+            background-position: center -18px;
+            padding: 3.66rem 0;
+            border-top-right-radius: 8px;
+        }
+        .list-group-item {
+            font-weight: 600
+        }
+        &:not(:first-child) {
+            li {
+                padding-left: 6.66rem;
+            }
+        }
+        .list-group {
+            margin: 0 -15px;
+            li {
+                &:last-child {
+                    height: 4.66rem
+                }
+            }
+        }
+        .card-footer {
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            margin: 0 -15px;
+            border-bottom-right-radius: 20px;
+            .btn {
+                width: 100%;
+                max-width: 320px
+            }
+            .price {
+                padding-left: 5.45rem;
+            }
+            .price_val {
+                font-size: 24px
+            }
+        }
+        &:nth-child(1) {
+            position: relative;
+            z-index: 3;
+            max-width: 320px;
+            background: none;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 8px;
+            .card-title {
+                text-align: right;
+                text-transform: uppercase;
+                font-size: 18px;
+                color: #000
+            }
+            .list-group {
+                position: relative; // top: -242px;
+                text-align: right;
+                font-weight: normal;
+                margin: 0 -15px;
+                border-bottom-left-radius: 20px;
+                li {
+                    padding-right: 3.66rem;
+                } // li {
+                //     &:last-child {
+                //         padding-bottom: 1.66rem;
+                //     }
+                // }
+            }
+            .list-group-item {
+                font-weight: normal;
+            }
+            .card-body {
+                &:nth-child(1) {
+                    background-color: #fff;
+                    border-top-left-radius: 8px;
+                    height: 359px;
+                    background-position: center 0;
+                    background-image: url($dist_path+"images/png/moduli/card_head_l_bg.png");
+                    padding: 6rem 3.66rem;
+                }
+            }
+            .card-footer {
+                background: none;
+                height: 242px
+            }
+        }
+        &:nth-child(2) {
+            .card-footer {
+                border-bottom-left-radius: 20px !important;
+            }
+            border-bottom-left-radius: 20px !important;
+            border-top-right-radius: 0;
+            .card-body {
+                &:nth-child(1) {
+                    border-top-right-radius: 0px;
+                }
+            }
+        }
+        &:nth-child(3) {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 20px !important;
+            .card-footer {
+                border-bottom-right-radius: 20px !important;
+            }
+        }
+        @include respond-to(xs) {
+            &:not(:first-child) {
+                li {
+                    padding-left: 1.33rem;
+                }
+            }
+            .card-footer {
+                font-size: 18px;
+                font-weight: 600;
+                border: none;
+                margin: 0 -15px;
+                border-bottom-right-radius: 20px;
+                .price {
+                    padding-left: 0;
+                }
+                .price_val {
+                    font-size: 24px
+                }
+            }
+        }
+    }
+}

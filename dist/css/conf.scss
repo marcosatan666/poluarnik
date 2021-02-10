@@ -1,0 +1,78 @@
+$env: "dist_view";
+$color-orange: #ffa200; // цвет кнопки
+$color-blue: #044587;
+$color-dark-blue:#023868;
+$color-dark-brown:#302828;
+$shadow: 0 5px 0 rgba(0, 0, 0, 0.1) !important;
+$color-text-grey:#7b7b7b;
+$color-grey:#f5f8fc;
+$color-light-grey:#ccd1d7;
+
+
+$blue-shadow:  0px 20px 20px -10px rgba(150, 191, 217, 0.75);
+$inp-shadow: 0px 10px 8px 0px rgba(102, 153, 204, 0.3);;
+
+/*=============================================================*/
+
+$xs: 568px;
+$sm: 667px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@mixin respond-to($media) {
+
+    @if $media==xs {
+        @media only screen and (max-width: $xs) {
+            @content;
+        }
+    }
+
+    @if $media==sm {
+        @media only screen and (max-width: $sm) {
+            @content;
+        }
+    }
+
+    @else if $media==md {
+        @media only screen and (min-width: $sm + 1) and (max-width: $lg - 1) {
+            @content;
+        }
+    }
+
+    @else if $media==max-md {
+        @media only screen and (max-width: $lg - 1) {
+            @content;
+        }
+    }
+
+    @else if $media==lg {
+        @media only screen and (min-width: $lg + 1) and (max-width: $xl - 1) {
+            @content;
+        }
+    }
+
+    @else if $media==max-lg {
+        @media only screen and (max-width: $xl - 1) {
+            @content;
+        }
+    }
+
+    @else if $media==xl {
+        @media only screen and (min-width: $xl) {
+            @content;
+        }
+    }
+}
+
+$env: 'development' !default;
+$dist_path: '/' !default;
+@if($env=='dist_view') {
+    $dist_path: '/local/dist/';
+}
+
+@if($env=='production') {
+    $dist_path: '/local/templates/polyarnik/assets/';
+}
+
+

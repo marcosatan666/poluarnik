@@ -1,0 +1,233 @@
+$size-orange: 55px;
+$size-h3: 1.63rem;
+
+@import 'conf.scss';
+
+    @include respond-to(xxl) {
+        .h1 {
+            font-size: 28px;
+        }
+        .h3 {
+            font-size: 1.63rem;
+            line-height: 1.3;
+        }
+        .col-xxl-6 {
+            flex: 0 0 50%;
+            max-width: 50%;   
+        }
+        .col-xxl-3 {
+            flex: 0 0 25%;
+            max-width: 25%;
+        } 
+        .mb-lg-5 {
+            margin-bottom: 2rem!important;
+        } 
+        .icon-down {
+            height: 20px;
+        }
+        
+        .j-numerator {
+            font-size: 30px;
+        }
+        .j-c_num {
+            font-size: 50px;
+        }
+        #formRecall .btn, #angar-building .btn, .inline-box form .btn {
+            height: 44px;
+        }
+        
+        
+        .site-header {
+            padding-top: 10px;
+            // min-height: 600px;
+            &.py-xl-4 {
+                padding-bottom: 0.5rem !important;
+                padding-top: 0.5rem !important;
+            }
+            & .btn-grey {
+                height: 40px;
+                .icon {
+                    top: 0.45rem;
+                }
+            }
+            &>.container {
+                padding-top: 0;
+            }
+
+            & .contacts {
+                top: 0;
+            }
+        }
+        .tel {
+            font-size: 19px;
+            line-height: 1;
+            .icon {
+                &.icon-phone {
+                    width: 15px;
+                    height: 25px;
+                    background-size: 15px;
+                }
+            }
+        }
+        .email {
+            font-size: 13px;
+        }
+        #h-mmenu a {
+            margin-bottom: 0;
+        }
+
+        .navMiddle {
+            a {
+                font-size: 15px;
+            }
+        }
+        .head-text {
+            .bold {
+                font-size: 24px;
+                br {
+                    display: none;
+                }
+            }
+            .h1 {
+                font-size: 36px;
+            }
+        }
+
+        .form-wrap {
+            padding: 20px 17px;
+            .form_title {
+                font-size: 16px;
+                margin-bottom: 0.5rem;
+            }
+            .desc {
+                font-size: 14px;
+            }
+        }
+        .btn-orange {
+            padding-top: 12px;
+            padding-bottom: 11px;
+        }
+        .form-control {
+            height: 44px;
+            font-size: .9rem;
+        }
+        .custom-control {
+            font-size: 13px;
+            margin-bottom: .5rem;
+        }
+        .custom-control-label {
+            b {
+                font-size: 13px;
+            }
+        }
+        .bx-breadcrumb {
+            .bx-breadcrumb-item {
+                line-height: 12px;
+            }
+            .bx-breadcrumb-item span {
+                font-size: 12px;
+            }
+            .bx-breadcrumb-item {
+                margin-bottom: 8px;
+            }
+        }
+
+
+        //reviews 
+        #reviews{
+            // padding-top: 5.66rem !important;//??
+            // margin-bottom: -17rem;//??
+
+            .j-sliderReviews {
+                
+                & .review-body {
+                    margin: 20px;
+                    padding: 40px;
+                    min-height: 400px !important;
+
+                    & .date {
+                        margin-bottom: 1.3rem;
+                    }
+                    & p:last-of-type {
+                        margin-bottom: 0;
+                    } 
+                }
+
+                & .cli_name {
+                    font-size: 18px;
+                }
+                & .slick-prev, & .slick-next {
+                    top: 15px;
+                }
+            }
+            .j-fancy {
+                margin-top: 52px;
+                max-height: 400px;
+                overflow: hidden;
+
+                & img {
+                    max-width: 100%;
+                }
+            }
+            
+        }
+        //excursions
+        #excursions {
+            // min-height: 600px;//exp
+            // padding-bottom: 370px;
+
+            & .container {
+            //     margin-top: 120px;
+            // }
+            & .h3{
+                font-size: $size-h3;
+            }
+            & .section-title{
+
+                & .c_orange {
+                    font-size: $size-orange;
+                }
+            } 
+            & .mb-5 {
+                margin-bottom: 1.5rem!important;
+            }
+            & .thumb-wrap {
+               max-width: 450px;
+               margin-left: auto!important; 
+            }
+            // &:after {
+            //     height: 100%;
+            //     background-position: 66% 512px;
+            //     background-size: 60%;
+            }
+        }
+        //maps
+        #map{
+            & .fly-box {
+                left: 43.5%;
+            }
+            .next-form-wrap {
+                padding: 2rem;
+            }
+
+            & .form-wrap{
+                display: flex;
+                max-width: 740px;
+
+                & b {
+                    font-size: 16px;
+                }
+                & ul.mb-lg-5 {
+                    margin-bottom: 0!important;
+                }
+            } 
+            & #j-map {
+                height: 500px;
+                margin-top: -40px;
+
+                &:before {
+                    height: 500px;
+                }
+            }
+        } 
+    }

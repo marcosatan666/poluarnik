@@ -1,0 +1,143 @@
+@import 'conf.scss';
+@import 'style.scss';
+@import 'blocks/crumbs.scss';
+@import 'blocks/pav_cost.scss';
+@import 'blocks/cost.scss';
+@import 'blocks/map.scss';
+@import 'blocks/vacht_comparision.scss';
+
+
+//
+.site-header {
+    background: none;
+}
+.head-card {
+    margin-bottom: 6rem;
+    .h6 {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 14px;
+    }
+    .prop-wrap {
+        border-radius: 15px;
+        .row {
+            border-bottom: dashed 1px #ccc;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    .price {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .j-thumbs>div {
+        cursor: pointer;
+        margin-bottom: 30px;
+        width: 100px;
+        img {
+            display: block;
+            max-width: 100px;
+            margin: 0 auto;
+        }
+        &:after {
+            content: "";
+            display: block;
+            max-width: 40px;
+            background: none;
+            width: 35px;
+            height: 3px;
+            margin: 8px auto 0 auto;
+        }
+        &.active {
+            &:after {
+                background: #ffa200;
+            }
+        }
+    }
+    .j-gal {
+        .slick-slide img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+    .slick-prev, .slick-next {
+        top: 56%;
+    }
+    .slick-prev {
+        left: 20px;
+    }
+}
+.chars {
+    .chars-header {
+        text-align: center;
+        color: #1c4da2;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: #fff;
+        background-image: url($dist_path+"images/png/moduli/card_head_r_bg.png");
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        background-size: 100% 110px;
+        padding-top: 2.33rem;
+        height: 8.66rem;
+    }
+    .row {
+        border-bottom: dashed 1px $color-light-grey;
+        background-color: #fff;
+        &>div:nth-child(1) {
+            font-weight: 700;
+        }
+    }
+}
+#moduli_cost {
+    .h3.small {
+        font-weight: 600;
+        text-transform: none;
+        font-size: 24px;
+    }
+    .form-wrap {
+        top: 7rem;
+    }
+}
+.cost {
+    // background-position: center -80px;
+    .title-img {
+        position: relative;
+        left: -80px;
+        top: 15px;
+    }
+}
+@include respond-to(xs) {
+    .cost {
+        // background-position: center -80px;
+        .title-img {
+            position: relative;
+            left: 0;
+            top: 15px;
+        }
+    }
+    #moduli_cost {
+        .section-title {
+            .h3 {
+                font-size: 19px;
+                b {
+                    font-size: 42px;
+                }
+            }
+            .c_orange {
+                font-size: 27px;
+            }
+        }
+        .form-wrap {
+            top: -6.63rem;
+        }
+    }
+
+    #map {
+    padding-top: 0;
+}
+}

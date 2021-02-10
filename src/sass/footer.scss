@@ -1,0 +1,125 @@
+@import 'conf.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,800,900&display=swap&subset=cyrillic');
+.site-footer {
+    font-size: 14px;
+    .navMiddle {
+        .n_link {
+            font-size: 14px;
+            padding: 0 10px;
+            font-weight: 600;
+            &:after {
+                margin-top: 2px;
+                margin-left: 8px;
+                background: $color-blue
+            }
+            &:nth-child(6) {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .navTop {
+        position: relative;
+        left: 25px;
+        .n_link {
+            font-size: 13px;
+            padding: 0 10px;
+            color: #000;
+            &:after {
+                margin-top: 2px;
+                margin-left: 8px;
+                background: #f6faff
+            }
+        }
+    }
+    .j-show-modal {
+        position: relative;
+        width: 250px; // .col:nth-child(1) { max-width: 120px;}
+        left: 30px;
+        .icon-gerb {
+            width: 30px;
+            height: 22px;
+            background-size: 22px;
+            position: relative;
+            top: 0.33rem;
+            left: 0.33rem
+        }
+    }
+    .reky,
+    .rekvizity {
+        font-size: 15px;
+        color: $color-text-grey
+    }
+    .rekvizity {
+        position: relative;
+        left: 40px
+    }
+    .social {
+        position: relative;
+        margin-top: -3.66rem;
+    }
+    .copyrights {
+        font-size: 13px;
+        color: $color-text-grey
+    }
+    .tel {
+        .icon.icon-phone {
+            position: relative;
+            top: 7px;
+            left: -0.45rem;
+            width: 25px;
+            height: 30px;
+            background-size: 25px;
+        }
+    }
+    @include respond-to(xs) {
+        .social {
+            position: relative;
+            margin-top: 0;
+        }
+        .rekvizity {
+            position: relative;
+            left: 0
+        }
+        .j-show-modal {
+            left: 0;
+            margin-top: 1.66rem;
+            width: 320px;
+            // .icon-gerb {
+            //     width: 30px;
+            //     height: 22px;
+            //     background-size: 22px;
+            //     position: relative;
+            //     top: 0.33rem;
+            //     left: 0.33rem
+            // }
+        }
+        .navMiddle {
+            .n_link {
+                padding: 0 10px 0 0;
+                display: block;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        .navTop {
+            left: 0;
+            .n_link {
+                padding: 0 10px 0 0;
+                display: block;
+                width: 100%;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        .tel {
+            padding-left: 1.66rem;
+            .icon.icon-phone {
+                left: -1.33rem;
+            }
+        }
+    }
+}

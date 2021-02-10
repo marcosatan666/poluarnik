@@ -1,0 +1,42 @@
+@@include('partials/head.html', {css:'modulnie-zdaniya.transpaki.page.css'})
+
+<body class="moduli">
+    @@include('partials/mobile-bar.html')
+    <div class="site-header py-4">
+        <div class="container">
+            @@include('partials/menu.html') 
+            @@include('partials/modul_page.transpaki.head-text.html')
+        </div>
+    </div>
+
+    <!-- moduli only -->
+    @@include('blocks/superstar.html')
+    @@include('blocks/moduli_kp.transpaki.html') 
+
+
+    @@include('blocks/transpaki.instructions.html') 
+
+
+
+
+
+
+
+    @@include('blocks/moduli_delivery.html')
+    <!--./moduli only -->
+    @@include('blocks/gallery.html') 
+    @@include('blocks/about.html') 
+    @@include('blocks/our-clients.html') 
+    @@include('blocks/reviews.html') 
+    @@include('blocks/excursions.html')
+
+    
+    @@include('blocks/map.html') 
+    @@include('partials/footer.html') 
+    @@include('partials/scripts.html')
+    <script src="js/modulnie-zdaniya.transpaki.js"></script>
+
+
+</body>
+
+</html>

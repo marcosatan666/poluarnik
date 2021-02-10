@@ -1,0 +1,112 @@
+@import '../conf.scss';
+#moduli_plans {
+    margin-top: 12rem;
+    .h1 {
+        text-transform: uppercase;
+    }
+    .j-plain-slider {
+        max-height: 160px;
+        overflow: hidden;
+    }
+    .card {
+        border: none;
+        margin-bottom: 3.66rem;
+        height: 440px;
+        background: none;
+        .card-footer {
+            background: none;
+            padding: 0;
+            border: none;
+        }
+        .card-body {
+            border-radius: 5px;
+            background: #fff;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card-image {
+            max-width: 100%
+        }
+        .card-title {
+            font-weight: 600;
+            font-size: 18px;
+            height: 81px;
+            overflow: hidden;
+        }
+        .price {
+            font-weight: 600;
+            font-size: 22px
+        }
+        .btn {
+            width: 100%;
+            text-transform: uppercase;
+        }
+        .slick-slide {
+            text-align: center;
+            img {
+                max-width: 180px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+
+.j-plain-slider {
+
+        .slick-prev,
+        .slick-next {
+            top: 50%;
+    
+            &:before {
+                font-size: 0;
+            }
+    
+        }
+    
+        .slick-prev {
+            left: 0;
+        }
+    
+        .slick-prev {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 20px;
+            background-image: url($dist_path+"images/png/arrow_l.png");
+            background-repeat: no-repeat;
+    
+            // &:before {
+    
+            //     width: 50px;
+            //     height: 20px;
+            //     background-image: url($dist_path+"images/png/strlk_l.png");
+            // }
+        }
+    
+        .slick-next {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 20px;
+            background-image: url($dist_path+"images/png/arrow_r.png");
+            background-repeat: no-repeat;
+           
+        }
+    
+    }
+
+
+    }
+    @include respond-to(xs) {
+        margin-top: 6.66rem;
+        .h1 {
+            font-size: inherit;
+        }
+        .card {
+                margin-bottom: 0.66rem;
+            .card-title {
+                font-size: inherit;
+            }
+        }
+    }
+}

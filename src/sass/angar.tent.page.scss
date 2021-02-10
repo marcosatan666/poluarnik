@@ -1,0 +1,135 @@
+@import 'angar.page.scss';
+@import 'blocks/angary_tent_character.scss';
+
+
+@include respond-to(sm) {
+    #full-cycle {
+        top: -9rem;
+        margin-bottom: -6rem;
+        padding-top: 6rem;
+        padding-bottom: 0;
+        background-position: center 0;
+        background-size: 100%;
+    }
+    #full-cycle #js-sliderScheme .block {
+        text-align: center;
+        padding: 0 0 0 0;
+    }
+    #superstar {
+        background-size: 600px;
+        background-position: revert;
+        padding-bottom: 6rem;
+    }
+    #superstar .super_int.c_orange {
+        margin-bottom: 0.66rem;
+        font-size: 6.6rem;
+        height: 8rem;
+    }
+    .cost {
+        padding-top: 0;
+        min-height: auto;
+        background-size: cover;
+        background-position: center 0;
+    }
+    .cost .form-wrap {
+        top: 3rem;
+        max-width: 100%;
+        position: relative;
+    }
+    .angary_tent_comparison {
+        .card {
+            &:nth-child(1) {
+                .card-body {
+                    &:nth-child(1) {
+                        padding: 0.66rem;
+                    }
+                }
+                .card-title {
+                    text-align: center;
+                    max-width: 100%;
+                    padding-top: 1.66rem;
+                }
+            }
+            &:nth-child(2) {
+                margin-top: -1rem;
+                padding: 0;
+            }
+            .card-text {
+                padding: 0;
+            }
+            .decor {
+                margin: 0 auto;
+            }
+        }
+        .col-md {
+            &:nth-child(2) {
+                left: 0;
+            }
+        }
+        .card {
+            .card-image {
+                position: relative;
+                width: 100%;
+                max-width: 350px;
+                margin: 3rem auto;
+            }
+            .card-footer {
+                margin: 0;
+            }
+        }
+    }
+    // .angary_tent_comparison .card .card-image {
+    //     position: relative;
+    //     width: 100%;
+    //     max-width: 350px;
+    //     margin: 3rem auto;
+    // }
+    // .angary_tent_comparison .card .card-text {
+    //     padding: 0;
+    // }
+    // .angary_tent_comparison .card:nth-child(2) {
+    //     margin-top: -1rem;
+    //     padding: 0;
+    // }
+    // .angary_tent_comparison .card .card-footer {
+    //     margin: 0;
+    // }
+    #d_visual {
+        margin-bottom: -12rem
+    }
+    .angar-building .wrap img {
+        position: relative;
+        top: 1.66rem;
+    }
+    #gallery {
+        top: 4.66rem;
+        overflow: hidden;
+        padding-bottom: 2.33rem;
+        &:after {
+            height: 6rem;
+            background: none;
+        }
+    }
+    #excursions {
+        &:after {
+            position: relative;
+            top: -20rem;
+            margin-bottom: -50rem;
+            background-size: contain;
+        }
+    }
+    #slide_items_angary .arrow-l,
+    #slide_items_angary .arrow-r {
+        top: 0;
+    }
+    #slide_items_angary .arrow-l {
+        left: 0;
+    }
+    #slide_items_angary .arrow-r {
+        right: 0;
+    }
+    #angary_character {
+        background: none;
+        background-color: #E3EFF7;
+    }
+}

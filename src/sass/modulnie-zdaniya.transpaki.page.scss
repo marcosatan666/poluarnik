@@ -1,0 +1,468 @@
+    @import 'conf.scss';
+    @import 'style.scss';
+    @import 'blocks/superstar.scss';
+    @import 'blocks/comparison.scss';
+    @import 'blocks/moduli_advantages.scss';
+    @import 'blocks/vagon_kp.scss';
+    @import 'blocks/moduli_kp.scss';
+    @import 'blocks/moduli_full-cycle.scss';
+    @import 'blocks/moduli_character.scss';
+    @import 'blocks/moduli_plans.scss';
+    @import 'blocks/j-numerator.scss';
+    @import 'blocks/pav_cost.scss';
+    @import 'blocks/stages.scss';
+    @import 'blocks/slide_items.scss';
+    @import 'blocks/3d_visual.scss';
+    @import 'blocks/delivery.scss';
+    @import 'blocks/gallery.scss';
+    @import 'blocks/excursions.scss';
+    @import 'blocks/about.scss';
+    @import 'blocks/our-clients.scss';
+    @import 'blocks/reviews.scss';
+    @import 'blocks/cost.scss';
+    @import 'blocks/map.scss';
+    /*only page*/
+    
+    $blue-dark:#E3EFF7;
+    $blue-dark2:#D4E1E9;
+    .site-header {
+        background-image: url($dist_path+'images/transpak_head_bg.png'), url($dist_path+'images/moduli_head_bg.png');
+        background-size: 1900px, 2400px;
+        background-position: center 6.6rem, center -6.6rem;
+        min-height: auto;
+        margin-bottom: -1.33rem;
+        .form-wrap {
+            margin-top: 75px
+        }
+    }
+    
+    .promo-exp {
+        top: 11.6rem;
+        width: 100%;
+        max-width: 1100px;
+        z-index: 99;
+        position: absolute;
+    }
+    
+    .moduli_kp-transpaki {
+        &#vagon_kp {
+            background-image: url($dist_path+'images/kp_transpak_bg.png'), url($dist_path+'images/kp_transpak_bg1.png');
+            top: 0;
+            padding-top: 12rem;
+            background-size: 1900px;
+            .form-wrap {
+                position: relative;
+                top: -3.33rem;
+                height: 420px;
+            }
+            .section-title {
+                &:after {
+                    top: 16rem;
+                }
+            }
+            .title-img {
+                position: relative;
+                left: -11.66rem;
+                top: 6rem;
+            }
+            .container {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    #superstar {
+        background-color: #E7F8FC;
+        &:before {
+            content: "";
+            display: inline-block;
+            background-image: url($dist_path+'images/stars_before.png');
+            height: 8.6rem;
+            width: 100%;
+            position: absolute;
+            margin-top: -6.6rem;
+        }
+    }
+    
+    #full-cycle {
+        .h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    
+    #gallery {
+        padding-top: 0;
+        .h1 {
+            text-outline: -4px;
+        }
+        .container {
+            padding-top: 6.66rem
+        }
+        .bg-wrap {
+            padding-bottom: 0px;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 355px;
+            margin-top: 0;
+            z-index: 3;
+            background-repeat: no-repeat; // filter: grayscale(100%);
+            background-position: 50% 50%;
+        }
+        &:before {
+            display: none;
+        }
+    }
+    
+    #about {
+        padding-top: 2.66rem;
+        .container {
+            position: relative;
+            top: 0;
+            margin-bottom: 0;
+            z-index: 10;
+        }
+    }
+    
+    #delivery {
+        background-color: $blue-dark;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            background: url($dist_path+"images/dark_top.png") no-repeat 50% 50%/contain;
+            width: 100%;
+            height: 356px;
+            bottom: 0;
+            z-index: 3;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    
+    #reviews {
+        &:after {
+            display: none;
+        }
+        &:before {}
+    }
+    
+    #excursions {
+        top: 0;
+        padding-bottom: 440px;
+        .container {
+            top: 160px;
+        }
+        &:before {}
+        &:after {
+            background-repeat: no-repeat; // background-size:1770px, contain;
+            background-position: 44% 580px;
+            height: 1050px;
+        }
+    }
+    
+    #slide_items {
+        margin-bottom: -3rem;
+        top: -3rem;
+        background-color: $blue-dark;
+        z-index: 99;
+    }
+    
+    #map {
+        padding-top: 1.66rem;
+    }
+    
+    #moduli_cost {
+        &.cost {
+            padding-bottom: 20rem;
+            padding-top: 20rem;
+            background-position: center -2rem;
+            background-repeat: no-repeat;
+        }
+    }
+    /**/
+    
+    #delivery {
+        background-color: #E8F3F9;
+    }
+    
+    #delivery img,
+    .title-img {
+        max-width: 100%;
+    }
+    
+    #stages {
+        padding-bottom: 2.33rem;
+        .card {
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 23px;
+                height: 20px;
+                top: 25px;
+                left: 85px;
+                position: absolute;
+                margin-top: 66%;
+                margin-left: 72%;
+                background-image: url(/images/png/strlk_r.png);
+            }
+            &:nth-child(3) {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    @include respond-to(md) {
+        .site-header {
+            min-height: auto;
+            background-size: 1400px;
+            background-position: center 0;
+        }
+        .advantages {
+            img {
+                top: 0;
+            }
+        }
+        #superstar {
+            min-height: 760px;
+            background-position: -12rem -14rem;
+        }
+        #vagon_kp {
+            .section-title {
+                left: 0;
+            }
+            .form-wrap {
+                top: -30rem;
+                left: 10%;
+            }
+            .container {
+                &:after {
+                    display: none;
+                }
+            }
+            .title-img {
+                top: 14rem;
+                left: 42%;
+            }
+        }
+        #moduli_cost {
+            .form-wrap {
+                top: 0;
+                left: 10%;
+            }
+            .doc-img {
+                position: absolute;
+                top: 7rem;
+                left: 42%;
+            }
+            &.cost {
+                padding-top: 6rem;
+            }
+        }
+        #slide_items {
+            background: none;
+        }
+        #moduli_plans {
+            .card .slick-slide img {
+                max-width: 100%;
+            }
+            .card .card-body {
+                max-width: 235px;
+            }
+        }
+        #gallery {
+            .gallery {
+                a {
+                    display: block;
+                    width: 220px;
+                }
+            }
+        }
+        #excursions {
+            text-align: right;
+            padding-bottom: 16rem;
+            &:before {
+                background: none;
+            }
+            .section-title {
+                top: 1.33rem;
+                text-align: center;
+                .c_orange {
+                    text-align: center;
+                }
+            }
+        }
+        #map {
+            .fly-box {
+                position: absolute;
+                left: 45%;
+            }
+        }
+        #our-clients {
+            padding-top: 6rem;
+        }
+        #itemsSlider .slick-prev {
+            left: 91%;
+        }
+        // #full-cycle {
+        //     .step {
+        //         &:nth-child(5),
+        //         &:nth-child(6) {
+        //             margin: 0 auto;
+        //         }
+        //     }
+        // }
+    }
+    
+    @include respond-to(xs) {
+        #superstar {
+            padding-bottom: 0;
+        }
+        .site-header {
+            background-image: url($dist_path+'images/moduli_mob.jpg');
+            min-height: 900px;
+            .form-wrap {
+                margin-top: 6.6rem;
+                top: 9rem;
+            }
+        }
+        #slide_items {
+            top: 0;
+            z-index: 99
+        }
+        #moduli_cost {
+            .section-title {
+                .h3 {
+                    font-size: 19px;
+                    b {
+                        font-size: 42px;
+                    }
+                }
+                .c_orange {
+                    font-size: 27px;
+                }
+            }
+            &.cost {
+                padding-top: 1.66rem;
+                padding-bottom: 1.66rem;
+            }
+        }
+        #excursions {
+            top: 0;
+            padding-bottom: 300px;
+            .section-title .c_orange {
+                text-align: center;
+            }
+            .align-items-center {
+                text-align: center;
+            }
+            .container {
+                top: 1.66rem;
+            }
+        }
+        #map {
+            padding-top: 2.66rem;
+        }
+        #delivery {
+            padding-bottom: 2.66rem;
+            background: none;
+        }
+        #gallery {
+            top: 0;
+            .container {
+                background-color: $blue-dark2;
+                padding-bottom: 1.66rem
+            }
+        }
+        #about {
+            position: relative;
+            top: 1.66rem;
+            padding-top: 0.3rem;
+            .container {
+                top: 3.66rem;
+                margin-bottom: 6.66rem;
+            }
+        }
+        .advantages {
+            padding-top: 0.3rem;
+            .h1 {
+                font-size: 21px
+            }
+            img {
+                position: relative;
+                top: 0;
+            }
+        }
+
+        .site-header {
+            
+            min-height: 1200px;
+            background-position: top center;
+            background-size: 600px;
+            background-repeat: no-repeat;
+        }
+
+        .promo-exp {
+        top: 15.6rem;
+        width: 100%;
+        max-width: 100%;
+        z-index: 99;
+        position: relative;
+        right: 3rem;
+    }
+
+    #vagon_kp .section-title {
+        left:0;
+        top: 0;
+        line-height: 1.1;
+        text-transform: uppercase;
+        position: relative;
+        text-align: center;
+    }
+    #vagon_kp .section-title .c_orange {
+        font-size: 27px;
+        text-align: center;
+    }
+
+    #vagon_kp .section-title .h3 {
+        font-weight: 700;
+        font-size: 19px;
+        padding-bottom: 0.33rem;
+    }
+
+
+    #vagon_kp .small {
+        font-size: inherit;
+    
+    }
+
+    .moduli_kp-transpaki#vagon_kp {
+    
+        top: 0;
+        padding-top: 0;
+        background-size: 600px;
+    }
+
+
+    .moduli_kp-transpaki#vagon_kp .title-img {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+
+    #stages .card,  #stages .card-group:nth-child(4) .card:nth-child(1) {
+    
+        max-width: 100% !important;
+    }
+
+
+    }

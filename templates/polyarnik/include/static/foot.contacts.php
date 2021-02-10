@@ -1,0 +1,1 @@
+<div class="tel pt-2"><i class="icon icon-phone"></i>8 [ 3952 ] 74 53 24</div>

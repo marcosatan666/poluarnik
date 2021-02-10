@@ -1,0 +1,274 @@
+    @import '../conf.scss';
+    @include respond-to(md) {
+        .site-header {
+            min-height: auto;
+            background-size: 1400px;
+            background-position: center 0;
+        }
+        .advantages {
+            img {
+                top: 0;
+            }
+        }
+        #superstar {
+            min-height: 760px;
+            background-position: -12rem -14rem;
+        }
+        #vagon_kp {
+            .section-title {
+                left: 0;
+            }
+            .form-wrap {
+                top: -30rem;
+                left: 10%;
+            }
+            .container {
+                &:after {
+                    display: none;
+                }
+            }
+            .title-img {
+                top: 14rem;
+                left: 42%;
+            }
+        }
+        #moduli_cost {
+            .form-wrap {
+                top: 0;
+                left: 10%;
+            }
+            .doc-img {
+                position: absolute;
+                top: 7rem;
+                left: 42%;
+            }
+            &.cost {
+                padding-top: 6rem;
+            }
+        }
+        #slide_items {
+            background: none;
+        }
+        #moduli_plans {
+            .card .slick-slide img {
+                max-width: 100%;
+            }
+            .card .card-body {
+                max-width: 235px;
+            }
+        }
+        #gallery {
+            .gallery {
+                a {
+                    display: block;
+                    width: 220px;
+                }
+            }
+        }
+        #excursions {
+            text-align: right;
+            padding-bottom: 16rem;
+            &:before {
+                background: none;
+            }
+            .section-title {
+                top: 1.33rem;
+                text-align: center;
+                .c_orange {
+                    text-align: center;
+                }
+            }
+        }
+        #map {
+            .fly-box {
+                position: absolute;
+                left: 45%;
+            }
+        }
+        #our-clients {
+            padding-top: 6rem;
+        }
+        #itemsSlider .slick-prev {
+            left: 91%;
+            // #full-cycle {
+            //     .step {
+            //         &:nth-child(5),
+            //         &:nth-child(6) {
+            //             margin: 0 auto;
+            //         }
+            //     }
+            // }
+        }
+    }
+    
+    @include respond-to(xs) {
+        .shine {
+            &:before {
+                display: none;
+            }
+        }
+        .site-header {
+            .head-text {
+                position: relative;
+                top: -17rem;
+            }
+            .form-wrap {
+                top: 19rem;
+            }
+        }
+        div#j-vagon_head_slider {
+            left: 0;
+            position: relative;
+            top: 14rem;
+            .slick-slide img {
+                display: block;
+                max-width: 100%
+            }
+        }
+        #slider_wrap {
+            position: relative;
+            left: 0;
+            /* top: 100px; */
+            max-width: 100%;
+            z-index: 12;
+            &:before {
+                display: none;
+            }
+        }
+        #vagon-ready {
+            padding-top: 4rem;
+            .block {
+                width: 270px;
+                flex-shrink: 0;
+                margin-top: 0;
+                &.img {
+                    left: -160px;
+                    transform: scale(.4);
+                    margin-top: 0;
+                    margin-bottom: -18rem;
+                }
+            }
+        }
+        #vagon_kp {
+            &.moduli_kp {
+                padding-top: 22rem;
+            }
+        }
+        #get-kp {
+            margin: 1.66rem 0;
+        }
+        #s02 {
+            padding-top: 0;
+            margin-top: 0;
+        }
+        .cost {
+
+            background-size: 600px;
+            padding-top: 1.33rem;
+            background-repeat: no-repeat;
+            .section-title {
+                font-size: 19px;
+                .c_orange {
+                    font-size: 27px;
+                }
+            }
+            .title-img {
+                max-width: 100%;
+                left: 0;
+                top: 1.66rem;
+            }
+
+           
+              
+           
+
+        }
+        .text-block {
+            padding: 3.66rem 0 3.66rem;
+        }
+        #map {
+            padding-top: 0;
+        }
+        #s05 {
+            main {
+                flex-grow: 1;
+                padding-left: 25px;
+                max-width: 100%;
+                margin-top: 0;
+                padding-top: 0;
+            }
+            aside {
+                ul {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 320px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    li {
+                        width: 40%;
+                        margin-right: 10%;
+                    }
+                }
+            }
+            .goods .card {
+                max-width: 350px;
+                margin-right: 15px;
+                &:nth-of-type(3n) {
+                    margin-right: 15px;
+                }
+            }
+        }
+        #s02 {
+            .wrap {
+                padding-top: 6rem;
+            }
+            .catalog {
+                .block {
+                    width: 100%;
+                    max-width: 320px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                .header {
+                    img {
+                        max-width: 100%;
+                        position: relative;
+                        left: 0;
+                        margin-top: 15px;
+                    }
+                    &>div {
+                        width: 100%;
+                        max-width: 320px;
+                    }
+                }
+            }
+            .footer {
+                padding: 20px 20px 20px;
+            }
+        }
+        .cost {
+            padding-top: 1.33rem;
+        }
+        #delivery {
+            padding-bottom: 9rem;
+            background: none;
+            padding-top:0;
+        }
+        #about {
+            position: relative;
+            top: 1.66rem;
+            padding-top: 0.3rem;
+            .container {
+                top: 3.66rem;
+                margin-bottom: 6.66rem;
+            }
+        }
+    }
+
+
+
+    

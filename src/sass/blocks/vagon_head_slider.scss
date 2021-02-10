@@ -1,0 +1,163 @@
+@import '../conf.scss';
+$defMarg: 30px;
+#slider_wrap {
+    position: absolute;
+    left: -150px;
+    top: 100px;
+    max-width: 1200px;
+    &:before {
+        margin-top: -140px;
+        left: 150px;
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 652px;
+        height: 650px;
+        background-image: url($dist_path+"images/png/vagon/vagon_elips.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+div#j-vagon_head_slider {
+    left: -150px;
+    position: relative;
+    top: -($defMarg);
+}
+
+.slide-title {
+    font-size: 24px;
+    font-weight: 700;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    transition: ease .2s;
+    flex-shrink: 0;
+    position: relative;
+    margin-bottom: 60px;
+    top: 100px;
+    padding-left: $defMarg;
+    .ic {
+        border-radius: 32px;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+        border-color: #fff;
+        background-image: url($dist_path+"images/ic_arrow_r.png");
+        background-size: 8px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: ease .2s;
+        position: relative;
+        right: -30px;
+    }
+    &:nth-child(1) {
+        left: -20px;
+    }
+    &:nth-child(2) {
+        left: 20px;
+    }
+    &:nth-child(3) {
+        left: 70px;
+    }
+    &.active {
+        font-size: 35px;
+        transition: ease .2s;
+        .ic {
+            border-radius: 52px;
+            width: 52px;
+            height: 52px;
+            background-color: #ffa200;
+            border-color: #ffa200;
+        }
+        &:nth-child(1) {
+            left: -80px; // .ic {
+            //     right: -25px;
+            // }
+        }
+        &:nth-child(2) {
+            left: -45px; // .ic {
+            //     right: 0;
+            // }
+        }
+        &:nth-child(3) {
+            left: 0; // .ic {
+            //     right: -30px;
+            // }
+        }
+    }
+}
+
+@include respond-to(xs) {
+
+    #slider_wrap {
+     
+        top: 9rem;
+    }
+
+
+
+
+
+
+    .slide-title {
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        text-align: center;
+        transition: ease .2s;
+        min-height: 6rem;
+        position: relative;
+        margin-bottom: 0;
+        top: 14rem;
+        padding-left: 0;
+        max-width: 28%;
+        float: left;
+        .ic {
+            border-radius: 32px;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-color: #fff;
+            border-color: #fff;
+            background-image: url($dist_path+"images/ic_arrow_r.png");
+            background-size: 8px;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: ease .2s;
+            position: relative;
+            top: 0.66rem;
+            right: 0;
+        }
+        &:nth-child(1) {
+            left: 0px;
+        }
+        &:nth-child(2) {
+            left: 0px;
+        }
+        &:nth-child(3) {
+            left: 0px;
+        }
+        &.active {
+            font-size: 16px;
+            transition: ease .2s;
+            &:nth-child(1) {
+                left: 0; // .ic {
+                //     right: -25px;
+                // }
+            }
+            &:nth-child(2) {
+                left: 0;
+            }
+            &:nth-child(3) {
+                left: 0;
+            }
+        }
+    }
+}

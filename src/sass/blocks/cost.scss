@@ -1,0 +1,72 @@
+@import '../conf.scss';
+.cost {
+    
+    padding-top: 320px;
+    padding-bottom: 100px;
+    // min-height: 100px;
+ 
+        min-height: 1300px;
+        margin-bottom: -26rem;
+        top: -8rem;
+ 
+
+    background-image: url($dist_path+'images/png/get_cost_bg.png');
+    background-position: center 0;
+    position: relative;
+    z-index: 98;
+    .btn-orange {
+        font-size: inherit;
+    }
+    .title-img {
+        position: relative;
+        left: -50px;
+        top: 97px;
+    }
+    .section-title {
+        line-height: 1.1;
+        text-transform: uppercase;
+        .h3 {
+            font-weight: 700;
+            font-size: 31px;
+        }
+        .c_orange {
+            text-shadow: 0 5px 0 rgba(0, 0, 0, .1);
+            font-size: 62px;
+            font-weight: 900;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+    }
+    .doc-img {
+        position: relative;
+        top: 195px;
+        left: -160px;
+    }
+    .form-wrap {
+        max-width: 320px;
+    }
+
+    
+    @include respond-to(xs) {
+        padding-top: 1.66rem;
+        .section-title {
+            .h3 {
+                font-size: 22px;
+                ;
+            }
+            .c_orange {
+                font-size: 39px;
+            }
+        }
+        .title-img {
+            max-width: 100%;
+            left: 0;
+            top: 1.66rem;
+        }
+        .doc-img {
+            display: none; // position: relative;
+            // top: 1.66rem;
+            // left: 0;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@import 'conf.scss';
+@import 'style.scss';
+@import 'blocks/superstar.scss';
+@import 'blocks/catalog.scss';
+@import 'blocks/delivery.scss';
+@import 'blocks/gallery.scss';
+@import 'blocks/excursions.scss';
+@import 'blocks/about.scss';
+@import 'blocks/our-clients.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/cost.scss';
+@import 'blocks/map.scss';
+@import 'blocks/vagon_kp.scss';
+@import 'blocks/moduli_kp.scss';
+@import 'blocks/vacht_plans.scss';
+@import 'blocks/moduli_character.scss';
+@import 'blocks/moduli_full-cycle.scss';
+@import 'blocks/vacht_top_catalog.scss';
+.site-header {
+    background-image: url($dist_path+'images/vacht_head_bg.png');
+    .form-wrap {
+        margin-top: 75px
+    }
+}
+
+#catalog {
+    .title {
+        font-size: 18px;
+    }
+    .good {
+        height: auto;
+        background-position: center -10rem;
+        background-size: cover;
+    }
+    .btn {
+
+        width: 180px;
+    }
+}
+
+
+
+
+
+#full-cycle {
+    .dash-wrap {
+        padding: 2px;
+        border: 1px dashed #d3d5d5;
+        border-radius: 100%;
+        max-width: 82px;
+        max-height: 82px;
+        margin: 0 auto;
+    }
+    .step {
+        margin-bottom: 6.66rem;
+        p {
+            max-width: 100%;
+            position: inherit;
+            top: 35px;
+            left: 0;
+            margin: 0 auto;
+        }
+        .num {
+            text-align: right;
+            max-width: 70%;
+        }
+    }
+}
+
+
+.cost {
+
+    padding-bottom: 20.6rem;
+    margin-bottom: -12rem;
+
+}
+
+section.text-block {
+    position: relative;
+    z-index: 98;
+    margin-bottom: 6.66rem;
+}

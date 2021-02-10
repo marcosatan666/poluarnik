@@ -1,0 +1,71 @@
+@import '../conf.scss';
+#d_visual {
+    padding-top: 290px;
+    padding-bottom: 0;
+    height: 1090px;
+    background-image: url($dist_path+'images/png/pavilions/pav_3d_bg.png');
+    position: relative;
+    z-index: 1;
+    background-position: center -330px;
+    .fly-wrap {
+        left: -200px;
+        position: relative;
+        top: -55px;
+        z-index: -1;
+    }
+    .fly-image-wrap {
+        width: 730px;
+        top: 8.6rem;
+        position: relative;
+    }
+   .form-wrap {
+        position: absolute;
+        top: 55px;
+        right: 0;
+    }
+
+    .small-text {
+        position: relative;
+        top: -80px;
+        padding-right: 80px;
+    }
+    .bold {
+        font-weight: 500;
+    }
+    .section-title {
+        text-transform: uppercase;
+        .h3 {
+            font-weight: 600;
+            font-size: 31px;
+        }
+        .c_orange {
+            text-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+            font-size: 62px;
+            font-weight: 900;
+            text-align: left;
+            margin-bottom: 8px;
+            line-height: 1
+        }
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        display: inline-block;
+        height: 350px;
+        background: #fdfcfd;
+        position: relative;
+        top: -60px;
+    }
+    @include respond-to(xs) {
+        .section-title {
+            text-transform: uppercase;
+            .h3 {
+                font-weight: 600;
+                font-size: 22px;
+            }
+            .c_orange {
+                font-size: 39px;
+            }
+        }
+    }
+}

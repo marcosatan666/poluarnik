@@ -1,0 +1,86 @@
+@import '../conf.scss';
+#slide_items_angary {
+    padding-top: 0;
+    padding-bottom: 1.66rem;
+    position: relative;
+    z-index: 5;
+    background-color: #E1EFF8;
+    .h1 {
+        text-transform: uppercase;
+    }
+    .j-c_num {
+        font-size: 34px;
+        font-weight: bold
+    }
+    .item-pic {
+        width: 100%;
+        margin-top: -1.33rem
+    }
+    .arrow-l,
+    .arrow-r {
+        background: none;
+        border: none;
+        font-size: 0;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 3.66rem;
+        height: 30px;
+    }
+    .arrow-l {
+        left: 3.66rem;
+    }
+    .arrow-r {
+        right: 3.66rem;
+    }
+    .j-slide-desc {
+        margin-top: 3.66rem;
+    }
+    @include respond-to(xs) {
+        .item-pic {}
+        .j-slide-desc {
+            margin-top: 0.66rem;
+        }
+        padding-bottom: 0.66rem;
+        .arrow-l,
+        .arrow-r {
+            top: 0;
+        }
+    }
+}
+
+#angarItemsSlider {
+    .h5 {
+        text-align: center;
+        font-size: 24px;
+        color: #1c4da2;
+        text-transform: uppercase;
+        font-weight: 700
+    }
+
+
+    padding-top: 1.66rem;
+
+
+    .slick-prev,
+    .slick-next {
+        top: -5px;
+        right: -15px;
+    }
+    .slick-prev {
+        left: 95%;
+    }
+    .slick-prev {
+        &:before {
+            width: 50px;
+            height: 20px;
+            background-image: url($dist_path+"images/png/strlk_l.png");
+        }
+    }
+    .slick-next {
+        &:before {
+            width: 50px;
+            height: 20px;
+            background-image: url($dist_path+"images/png/strlk_r.png");
+        }
+    }
+}

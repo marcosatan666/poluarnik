@@ -1,0 +1,54 @@
+@@include('partials/head.html', {css:'vacht.page.css'})
+
+<body class="vacht">
+    @@include('partials/mobile-bar.html')
+    <div class="site-header py-4">
+        <div class="container">
+            @@include('partials/menu.html') 
+            @@include('partials/headers/vacht.html')
+        </div>
+    </div>
+    @@include('blocks/superstar.html')
+    <!-- vacht only -->
+    @@include('blocks/vacht_thumb.catalog_elements.html')
+
+    @@include('blocks/moduli_kp.html')
+
+    @@include('blocks/vacht_thumb.catalog.html')
+
+    @@include('blocks/vacht_full-cycle.html')
+
+
+
+   
+
+    @@include('blocks/vacht_plans.html')
+
+    @@include('blocks/vacht_cost.html')
+
+    <section class="text-block">
+        <div class="container">
+            <p class="col-lg-9 mx-auto text-center">Тут будет текст для СЕО.... Ежедневно наша команда создаёт надёжный продукт и постоянно повышает качество товаров и услуг. Перед началом производства мы проектируем каждую модель в 3D пространстве, это позволяет продумать все детали, совместить комфорт и надёжность в нашей продукции «Полярник». Изготавливаем здания нестандартных размеров по индивидуальным проектам. Качество нашей продукции подтверждают сертификаты соответствия ГОСТ 22853-86 и ТУ 5363.</p>
+        </div>
+
+     
+    </section>
+
+    @@include('blocks/vacht_delivery.html') 
+    <!--./vacht only -->
+  
+
+    @@include('blocks/gallery.html') 
+    @@include('blocks/about.html') 
+    @@include('blocks/our-clients.html')
+    @@include('blocks/reviews.html') 
+    @@include('blocks/excursions.html') 
+    @@include('blocks/map.html')
+    @@include('partials/footer.html') 
+    @@include('partials/scripts.html')
+    <script src="js/vacht.js"></script>
+
+
+</body>
+
+</html>

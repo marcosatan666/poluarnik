@@ -1,0 +1,152 @@
+/*=============================================================*/
+.has-float-label {
+  display: block;
+  position: relative; }
+  .has-float-label label, .has-float-label > span {
+    position: absolute;
+    left: 15px;
+    top: 0.3rem;
+    color: #044587;
+    font-weight: bold;
+    cursor: text;
+    font-size: 75%;
+    opacity: 1;
+    transition: all .2s; }
+  .has-float-label select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  .has-float-label textarea {
+    width: 100%; }
+  .has-float-label input,
+  .has-float-label select,
+  .has-float-label textarea {
+    padding-top: 1em;
+    margin-bottom: 2px;
+    border: 0;
+    border-radius: 0; }
+    .has-float-label input::placeholder,
+    .has-float-label select::placeholder,
+    .has-float-label textarea::placeholder {
+      opacity: 1;
+      transition: all .2s; }
+    .has-float-label input:placeholder-shown:not(:focus)::placeholder,
+    .has-float-label select:placeholder-shown:not(:focus)::placeholder,
+    .has-float-label textarea:placeholder-shown:not(:focus)::placeholder {
+      opacity: 0; }
+    .has-float-label input:placeholder-shown:not(:focus) + *,
+    .has-float-label select:placeholder-shown:not(:focus) + *,
+    .has-float-label textarea:placeholder-shown:not(:focus) + * {
+      font-size: 14px;
+      opacity: .5;
+      top: 0.95em;
+      left: 15px;
+      color: #000;
+      font-weight: normal; }
+    .has-float-label input:focus,
+    .has-float-label select:focus,
+    .has-float-label textarea:focus {
+      outline: none; }
+  .has-float-label select {
+    padding-right: 1em;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.5em bottom 0.25em;
+    background-size: 8px 10px; }
+
+.form-wrap {
+  max-width: 320px;
+  padding: 30px;
+  background: #f5f8fc;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 20px 20px -10px rgba(150, 191, 217, 0.75);
+  -moz-box-shadow: 0px 20px 20px -10px rgba(150, 191, 217, 0.75);
+  box-shadow: 0px 20px 20px -10px rgba(150, 191, 217, 0.75);
+  position: relative;
+  z-index: 13; }
+  .form-wrap .form_title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #302828; }
+  .form-wrap .desc {
+    font-size: 16px;
+    text-align: center; }
+  .form-wrap.inline-box {
+    max-width: 100%; }
+
+.form-control {
+  background-color: #e3ebf7;
+  height: 50px;
+  border: none;
+  border-radius: 3px !important; }
+  .form-control:focus {
+    color: #000;
+    background-color: #fff;
+    border: none;
+    outline: 0;
+    box-shadow: 0px 10px 8px 0px rgba(102, 153, 204, 0.3); }
+
+.custom-control {
+  padding-left: 8px;
+  margin-bottom: 1.33rem; }
+
+.custom-control-input {
+  position: relative;
+  left: 0;
+  z-index: -1;
+  width: 1rem;
+  height: 1.25rem;
+  opacity: 0; }
+
+.custom-control-label {
+  line-height: 1.3;
+  padding-left: 15px; }
+  .custom-control-label b {
+    font-size: 15px; }
+  .custom-control-label:before {
+    position: absolute;
+    top: 0.25rem;
+    left: -1.1rem;
+    display: block;
+    width: 1.33rem;
+    height: 1.33rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: solid #adb5bd 1px; }
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #ffa200;
+  background-color: #ffa200; }
+
+.custom-control-label::after {
+  background: no-repeat 100% / 14px 18px;
+  top: 6px;
+  left: -1rem; }
+
+.custom-control {
+  cursor: pointer; }
+
+.politik {
+  font-size: 14px;
+  line-height: 1.2; }
+
+/**/
+#formRecall,
+#angar-building,
+.inline-box form {
+  font-size: 16px; }
+  #formRecall .btn,
+  #angar-building .btn,
+  .inline-box form .btn {
+    height: 50px;
+    max-width: 220px; }
+  #formRecall a,
+  #angar-building a,
+  .inline-box form a {
+    font-size: 13px; }
+  @media only screen and (max-width: 667px) {
+    #formRecall .btn,
+    #angar-building .btn,
+    .inline-box form .btn {
+      max-width: 100%; } }

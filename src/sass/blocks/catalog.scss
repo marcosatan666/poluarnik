@@ -1,0 +1,111 @@
+@import '../conf.scss';
+#catalog {
+    .h1 {
+        text-transform: uppercase;
+        .c_orange {
+            font-weight: 600;
+        }
+    }
+    .catalog {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 40px;
+        .good_wrapper {
+            &:nth-child(1),
+            &:nth-child(2) {
+                img {
+                    position: relative;
+                    top: 35px;
+                }
+            }
+        }
+    }
+    .good {
+        // width: 360px;
+        min-height: 560px;
+        box-shadow: 6px 8px 44px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        margin-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 35px;
+        padding-left: 5px;
+        padding-right: 5px;
+        position: relative;
+        background: #fff url($dist_path+"images/png/card_header.png") no-repeat 0 0;
+        background-size: contain;
+        text-align: center;
+        
+        &.good-mini {
+            min-height: 440px;
+            background-position-y: -9rem;
+            background-size: contain;
+            .img {
+                top: 4rem;
+            }
+            .btn {
+                margin-top: 6rem;
+            }
+        }
+        .second_list {
+            min-height: 11.6rem;
+            position: relative;
+            left: 10px;
+        }
+      
+        @include respond-to(xs) {
+            width: 100%;
+            height: auto;
+            background-image: url($dist_path+"images/png/card_header.png");
+            background-size: contain;
+            .img {
+                max-width: 100%;
+            }
+        }
+    }
+    .title {
+        color: #1c4da2;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        span {
+            color: #ffa200;
+            font-weight: 400;
+            display: block;
+        }
+    }
+    .btn {
+        margin-top: 1.33rem;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 321px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: 60px;
+    }
+    .img.top {
+        margin: 30px auto;
+    }
+    .img {
+        position: relative;
+        top: 0;
+        min-height: 10rem;
+        max-height: 10rem;
+    }
+    .decor {
+        position: relative;
+        top: -8px;
+    }
+}

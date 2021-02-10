@@ -1,0 +1,5 @@
+/*=============================================================*/
+@media only screen and (max-width: 667px) {
+  .site-header .head-text {
+    position: relative;
+    top: 0; } }

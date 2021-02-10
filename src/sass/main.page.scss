@@ -1,0 +1,96 @@
+@import 'conf.scss';
+@import 'style.scss';
+@import 'blocks/superstar.scss';
+@import 'blocks/catalog.scss';
+@import 'blocks/delivery.scss';
+@import 'blocks/gallery.scss';
+@import 'blocks/excursions.scss';
+@import 'blocks/about.scss';
+@import 'blocks/our-clients.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/cost.scss';
+@import 'blocks/map.scss';
+
+/*only page*/
+
+#about {
+    position: relative;
+    z-index: 98;
+    
+    .container {
+        top: 3.66rem;
+        margin-bottom: 6.66rem;
+    }
+}
+
+// .cost {
+//     min-height: 1300px;
+//     margin-bottom: -21rem;
+//     top: -6rem;
+// }
+
+#gallery {
+    padding-top: 100px;
+    overflow: visible;
+    padding-bottom: 0;
+    position: relative;
+
+    top: 0px;
+    &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        -moz-transform: rotate(180deg);
+        /* Для Firefox */
+        -ms-transform: rotate(180deg);
+        /* Для IE */
+        -webkit-transform: rotate(180deg);
+        /* Для Safari, Chrome, iOS */
+        -o-transform: rotate(180deg);
+        /* Для Opera */
+        transform: rotate(180deg);
+        width: 100%;
+        height: 356px;
+        background-image: url($dist_path+"images/dark_top.png");
+    }
+}
+
+@include respond-to(xs) {
+    #excursions {
+        top: 6.66rem;
+        .section-title .c_orange {
+            text-align: center;
+        }
+        .align-items-center {
+            text-align: center;
+        }
+        .container {
+            top: 1.66rem;
+        }
+    }
+    #delivery {
+        padding-bottom: 0px;
+        background: none;
+    }
+    #gallery {
+        top: 6.66rem;
+        .container {
+            background-color: #D4E1E9;
+            padding-bottom: 1.66rem
+        }
+    }
+    #about {
+        position: relative;
+        top: 6.66rem;
+        .container {
+            top: 3.66rem;
+            margin-bottom: 12.66rem;
+        }
+    }
+    .cost {
+        padding-top: 12.66rem;
+        margin-bottom: -500px;
+    }
+}
+
+@import 'media/media.main_page.scss';

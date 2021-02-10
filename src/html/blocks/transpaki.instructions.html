@@ -1,0 +1,48 @@
+<section id="stages">
+    <div class="container">
+        <div class="h1"><b>Инструкции</b> по сборке</div>
+        <p class="text-center">Все работы проводятся в теплом цеху, это позволяет строить Павильоны круглый год.<br/>
+            Вы можете посещать наше производство для контроля строительства.</p>
+        <div class="card-group">
+            @@include('els/stage.html', {
+            c_number:'1',
+            head:'1-2 месяца',
+            content:'Отдельные модули изготавливаются на заводе, на высокоточном оборудовании.',
+            src :'/images/trnspak_1.png'
+            })
+            @@include('els/stage.html', {
+            c_number:'2',
+            head:'1 день',
+            content:'Транспортируются на объект и соединяются вместе.Места стыков утепляются.',
+            src :'/images/trnspak_2.png'
+            })
+            @@include('els/stage.html', {
+            c_number:'3',
+            head:'2-3 дня',
+            content:'Монтируется общая кровля и декоративные элементы. Монтаж занимает до 5 дней.',
+            src :'/images/trnspak_3.png'
+            })
+            
+        </div>
+
+        <div class="card-group">
+
+            @@include('els/stage.html', {
+                c_number:'4',
+                head:'1 день',
+                content:'Транспортируются на объект и соединяются вместе.Места стыков утепляются.',
+                src :'/images/trnspak_4.png'
+                })
+                @@include('els/stage.html', {
+                c_number:'5',
+                head:'2-3 дня',
+                content:'Монтируется общая кровля и декоративные элементы. Монтаж занимает до 5 дней.',
+                src :'/images/trnspak_5.png'
+                })
+
+
+        </div>
+
+
+    </div>
+</section>

@@ -1,0 +1,56 @@
+@import '../conf.scss';
+#vagon_kp {
+    &.moduli_kp {
+        .container {
+            &:after {
+                top: -18.6rem !important;
+            }
+        }
+        .section-title {
+            top: -6.66rem;
+            &:after {
+                display: none;
+            }
+        }
+        top: 0;
+        margin-bottom: -25rem;
+      
+        @include respond-to(xs) {
+            top: 0;
+            height: 550px;
+            margin-bottom: -0px;
+            .section-title {
+                left: 0;
+                top: -24.66rem;
+                line-height: 1.1;
+                text-transform: uppercase;
+                position: relative;
+                text-align: center;
+                z-index: 99;
+                .h3 {
+                    font-size: 19px;
+                    b {
+                         font-size: 19px;
+                    }
+                }
+                .c_orange {
+                    font-size: 27px;
+                    text-align: center;
+                }
+            }
+            .title-img {
+                top: 13rem;
+                left: 3.66rem;
+                z-index: 999;
+                display: none;
+            }
+            .small {
+                font-size: inherit;
+            }
+            .form-wrap {
+                max-width: 400px;
+                top: -22rem
+            }
+        }
+    }
+}

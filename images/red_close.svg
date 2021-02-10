@@ -1,0 +1,9 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer">
+  <title>Layer 1</title>
+  <g transform="matrix(2.731096221878288,0,0,-2.731096221878288,-17.892377973838624,47.98874568370569) " id="g10">
+   <path fill="none" stroke="#f70c0c" stroke-width="0.774" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="path88" d="m7.35669,16.8242l10.16288,-10.05321"/>
+   <path fill="none" stroke="#f70c0c" stroke-width="0.774" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="path898" d="m17.51957,16.8242l-10.16288,-10.05321"/>
+  </g>
+ </g>
+</svg>

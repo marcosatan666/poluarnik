@@ -1,0 +1,10 @@
+$size-orange: 55px;
+$size-h3: 1.63rem;
+
+@import 'conf.scss';
+.main-body{
+    @import 'basis_media';
+
+    @include respond-to(xxl) {
+    }
+}

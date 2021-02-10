@@ -1,0 +1,118 @@
+/*=============================================================*/
+.icon {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.dash-wrap {
+  padding: 2px;
+  border: 1px dotted #000000;
+  border-radius: 100%;
+  width: 82px;
+  height: 82px; }
+  .dash-wrap .icon {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffa200;
+    border-radius: 50%; }
+
+.icon-phone {
+  background-image: url("/local/dist/images/phone.png");
+  width: 15px;
+  height: 26px;
+  background-size: 15px; }
+
+.icon-gerb {
+  background-image: url("/local/dist/images/svg/gerb.svg");
+  width: 15px;
+  height: 26px;
+  background-size: 15px; }
+
+.icon-r {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  border: 1px dotted #000000;
+  background-color: #ffa200;
+  border-radius: 50%; }
+
+.icon-down {
+  width: 15px;
+  height: 26px;
+  background-size: 15px;
+  background-image: url("/local/dist/images/down.png"); }
+
+.icon-wts {
+  width: 40px;
+  height: 43px;
+  background-size: 40px;
+  background-image: url("/local/dist/images/png/wtsapp.png"); }
+
+.icon-tg {
+  width: 40px;
+  height: 43px;
+  background-size: 40px;
+  background-image: url("/local/dist/images/png/tg.png"); }
+
+.icon-vbr {
+  width: 40px;
+  height: 43px;
+  background-size: 39px;
+  background-image: url("/local/dist/images/png/viber.png"); }
+
+.icon-o_marker {
+  width: 40px;
+  height: 40px;
+  background-size: 30px;
+  background-image: url("/local/dist/images/1.png"); }
+
+.icon-o_phone {
+  width: 40px;
+  height: 40px;
+  background-size: 20px;
+  background-image: url("/local/dist/images/2.png"); }
+
+.icon-o_mail {
+  width: 40px;
+  height: 40px;
+  background-size: 30px;
+  background-image: url("/local/dist/images/3.png"); }
+
+.icon-circul {
+  width: 45px;
+  height: 45px;
+  background-size: 21px;
+  background-image: url("/local/dist/images/svg/circul.svg"); }
+
+.icon-zavod {
+  width: 45px;
+  height: 45px;
+  background-size: 26px;
+  background-image: url("/local/dist/images/svg/zavod.svg"); }
+
+.icon-carr {
+  width: 45px;
+  height: 45px;
+  background-size: 30px;
+  background-image: url("/local/dist/images/svg/carr.svg"); }
+
+.icon-secure {
+  width: 45px;
+  height: 45px;
+  background-size: 26px;
+  background-image: url("/local/dist/images/svg/secure.svg"); }
+
+.icon-plansh {
+  width: 45px;
+  height: 45px;
+  background-size: 26px;
+  background-image: url("/local/dist/images/svg/plansh.svg"); }
+
+.icon-play-right {
+  width: 13px;
+  height: 11px;
+  background-size: 10px;
+  background-image: url("/local/images/play-button.svg"); }

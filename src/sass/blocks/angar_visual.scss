@@ -1,0 +1,25 @@
+@import '../conf.scss';
+#d_visual {
+    padding-top: 9rem;
+    background-color: #E1EFF8;
+    background-image: url($dist_path+'images/png/angar/angar_order_bg.png');
+    position: relative;
+    z-index: 6;
+    top: -6.6rem;
+    background-position: center -8rem;
+    margin-bottom: -22rem;
+    &:after {
+        height: auto;
+    }
+    @include respond-to(xs) {
+        .form-wrap {
+            position: relative;
+            top: 0;
+            max-width: 400px;
+        }
+        .btn-orange {
+            font-size: 14px
+        }
+        padding-top: 2.66rem;
+    }
+}

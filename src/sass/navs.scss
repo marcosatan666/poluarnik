@@ -1,0 +1,188 @@
+@import 'conf.scss';
+@import 'blocks/mob_menu.scss';
+.nav {
+    a {
+        &:after {
+            content: "";
+            position: absolute;
+            height: 20px;
+            width: 2px;
+        }
+    }
+}
+.navTop {
+    position: relative;
+    left: -2.66rem;
+    a {
+        color: #000;
+        font-size: 15px;
+        &:after {
+            margin-top: 2px;
+            margin-left: 15px;
+            background: #c1daeb
+        }
+        &:nth-child(4) {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+.navMiddle {
+    a {
+        color: $color-blue;
+        font-size: 18px;
+        font-weight: 500;
+        &:after {
+            margin-top: 2px;
+            margin-left: 2.33rem;
+            background: $color-blue
+        }
+    }
+    li:nth-child(5) {
+        a {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+.top_list {
+    li {
+        list-style: none;
+        position: relative;
+        display: block;
+        padding: 0.33rem;
+        a {
+            font-weight: 600
+        }
+    }
+}
+.second_list {
+    position: relative;
+    left: 10px;
+    li {
+        list-style: none;
+        text-align: left;
+        display: block;
+        padding: 0.1rem 20px;
+        min-width: 50%;
+        max-width: 50%;
+
+        float: left;
+        // padding-left: 20px;
+        &:before {
+            display: inline-block;
+            content: "";
+            width: 15px;
+            height: 8px;
+            background-image: url($dist_path+"images/svg/right.svg");
+            margin-top: 7px;
+            margin-left: -20px;
+            position: absolute;
+            background-repeat: no-repeat;
+        }
+
+        a {font-size: 13px;}
+    }
+}
+#h-mmenu {
+    a {
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        text-align: left;
+        margin-bottom: 10px;
+        &:hover {
+            opacity: 0.8
+            // font-weight: 600;
+        }
+    }
+    
+    a.parent {
+        background: url(images/arrow.gif) center right no-repeat
+    }
+    a.denied {
+        background: url(images/lock.gif) center right no-repeat
+    }
+    li.item-selected {
+        // background: #d6d6d6;
+        color: #fff
+    }
+    li ul {
+        
+        position: absolute;
+        top: auto;
+        display: none;
+        z-index: 500;
+        height: auto;
+        width: 100%;
+        max-width: 800px;
+        background: #f5f5f5;
+        padding-left: 0;
+        border-top: solid 4px #0548a1;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 20px 0 20px 30px;
+    }
+    li li {
+        float: left;
+        width: 50%;
+    
+        list-style: none;
+        padding: 5px 0;
+        display: block;
+        min-height: 2.66rem;
+       
+
+        &:hover {
+       
+            // content: "";
+            background-image: url($dist_path+"/images/play-button.svg");
+            background-size: 15px;
+            padding-left: 15px;
+            background-position: left 13px;
+            background-repeat: no-repeat;
+            // font-size: 1.1rem;
+            // margin-left: -30px;
+            // display: inline-block;
+            // position: absolute;
+            // color: #ffa200;
+            // margin-top: 3px;
+            // height: 15px;
+            // width: 25px;
+            // background-size: contain;
+            // background-repeat: no-repeat;
+        
+    }
+
+
+
+
+        a {
+            font-size: 16px;
+            &:after {
+                display: none;
+            }
+            &:hover {
+                // padding: 5px 10px 0 40px;
+                text-decoration: none;
+                text-align: left;
+
+              
+            }
+        }
+    }
+    li ul ul {
+        // margin: -27px 0 0 132px
+    }
+}
+#h-mmenu li:hover ul ul, #h-mmenu li.jshover ul ul, #h-mmenu li:hover ul ul ul, #h-mmenu li.jshover ul ul ul, #h-mmenu li:hover ul ul ul ul, #h-mmenu li.jshover ul ul ul ul, #h-mmenu li:hover ul ul ul ul ul, #h-mmenu li.jshover ul ul ul ul ul {
+    display: none
+}
+#h-mmenu li:hover ul, #h-mmenu li.jshover ul, #h-mmenu li li:hover ul, #h-mmenu li li.jshover ul, #h-mmenu li li li:hover ul, #h-mmenu li li li.jshover ul, #h-mmenu li li li li:hover ul, #h-mmenu li li li li.jshover ul, #h-mmenu li li li li li:hover ul, #h-mmenu li li li li li.jshover ul {
+    display: block
+}
+div.menu-clear-left {
+    clear: left
+}

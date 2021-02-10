@@ -1,0 +1,211 @@
+$size-orange: 55px;
+$size-h3: 1.63rem;
+
+@import 'conf.scss';
+
+.vachtovie-body {
+    @import 'basis_media';
+
+    @include respond-to(xxl) {
+        .site-header {
+            background-position-y: -19%, 79%;
+            background-size: 99%, 100%;
+        }
+
+        //superstar
+        #superstar {
+            background-position: -89px 14%;
+            background-size: 1280px;
+            min-height: 710px;    
+
+            & .h3 {
+                line-height: 1.3; 
+            }
+        }
+
+        //vacht_top_catalog
+        #vacht_top_catalog {
+
+            .good {
+                margin-top: 0;
+            }
+
+            .img {
+                margin-top: 1rem;
+                margin-bottom: 1rem;     
+            }
+
+            .price {
+                font-size: 18px;
+            }
+            .btn {
+                height: 44px;
+            }
+        }
+
+        #vagon_kp {
+            &.moduli_kp {
+                padding-top: 195px;
+                margin-bottom: -31rem;
+            }
+            & .section-title {
+                & .c_orange {
+                   font-size: $size-orange; 
+                }
+            }
+            & .title-img {
+                left: 5.66rem;
+                transform: scale(.8);
+                top: -1rem;
+            }
+            &.moduli_kp .container{
+                &:after {
+                    top: -25.6rem !important;
+                    transform: scale(0.8);
+                }
+            }
+            & .form-wrap {
+                top: -100px;
+                height: 387px;
+            }
+        }
+
+        #catalog {
+            & .catalog {
+                margin-top: 0;
+            }
+
+            .title {
+                font-size: 16px;
+            }
+
+            .good_wrapper {
+                padding: 5px 15px;
+            }
+
+            & .img {
+                top: 0;
+                min-height: 6rem;
+            }
+            .good {
+                margin-top: 15px;
+                padding-top: .75rem;
+                padding-bottom: .75rem;
+                min-height: 235px;
+
+                & .img-fluid {
+                    max-width: 180px;
+                }
+            }
+            .btn{
+                height: 40px;
+                margin-top: 0;
+            }
+        }
+
+        #full-cycle {
+            .step {
+                margin-bottom: 6.2rem;
+            }
+        }
+
+        #vacht_plans {
+            .card {
+                margin-bottom: 3rem;
+                height: 30rem;
+                .price{
+                    font-size: 18px;
+                    padding-top: 1.2rem!important;
+                    padding-bottom: 1.2rem!important;
+                }
+            }
+        }
+        //angary_cost
+        #angary_cost.cost{
+            padding-top: 195px;
+        }
+        & .cost{
+            .section-title {
+                & .h3 {
+                    font-size: $size-h3;
+                    max-width: 72%;
+                    display: inline-block;
+                }
+                .c_orange {
+                    font-size: $size-orange;
+                }
+            }
+            & .title-img {
+                left: 0px;
+                max-width: 465px;
+                display: block;
+                top: 50px;
+            }
+            & .doc-img {
+                max-width: 376px;
+                top: 65px;
+                left: -193px;
+            }
+        }
+
+        #delivery {
+            & .h1{
+                font-size: 28px;
+                margin-bottom: 1rem!important;
+            }
+
+            & .h3 {
+                font-size: $size-h3;
+            }
+            & .img_container {
+                text-align: center;
+
+                img {
+                    width: 85%;
+                }
+            }
+        }
+
+        // gallery
+        #gallery{
+
+            & .h1 {
+                top: -75px;
+            }
+            .gallery {
+                height: 410px;
+                
+                & a {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    height: 180px;
+
+                    & img {
+                        width: 270px;
+                        object-fit: cover;
+                        object-position: center;
+                        height: 100%;
+                    }
+                }
+            }
+
+            & .btn {
+                width: 240px;
+            }
+        }
+
+        #our-clients {
+            padding-top: 0;
+        }
+
+        //excursions 
+        #excursions {
+            & .container {
+                & .thumb-wrap{
+                    transform: scale(.8) translate(2rem, -2rem);
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,123 @@
+@import '../conf.scss';
+
+#full-cycle {
+    .step {
+        text-align: center;
+
+        .num {
+            text-align: right;
+            max-width: 100px;
+        }
+
+        p {
+            max-width: 160px;
+            position: relative;
+            top: 35px;
+            left: -30px;
+        }
+
+        &:nth-child(4n) {
+            .icon {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .dash-wrap {
+        padding: 2px;
+        border: 1px dashed #d3d5d5;
+        border-radius: 100%;
+        width: 82px;
+        height: 82px;
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            position: relative;
+            top: 3px;
+            left: 3px;
+            background-repeat: no-repeat;
+
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 23px;
+                height: 20px;
+                top: 25px;
+                left: 85px;
+                position: relative;
+                background-image: url($dist_path+"images/png/strlk_r.png");
+            }
+
+            &.icon-step1 {
+                background-image: url($dist_path+"images/step1.png");
+            }
+
+            &.icon-step2 {
+                background-image: url($dist_path+"images/step2.png");
+            }
+
+            &.icon-step3 {
+                background-image: url($dist_path+"images/step3.png");
+            }
+
+            &.icon-step4 {
+                background-image: url($dist_path+"images/step4.png");
+            }
+
+            &.icon-step5 {
+                background-image: url($dist_path+"images/step5.png");
+            }
+
+            &.icon-step6 {
+                background-image: url($dist_path+"images/step6.png");
+            }
+
+            &.icon-step7 {
+                background-image: url($dist_path+"images/step5.png");
+            }
+            &.icon-step8 {
+                background-image: url($dist_path+"images/step5.png");
+            }
+
+        }
+    }
+
+
+    @include respond-to(xs) {
+
+
+        .step {
+            text-align: center;
+    
+            .num {
+                text-align: right;
+                max-width: 120px;
+            }
+
+            p {
+                max-width: 160px;
+                position: relative;
+                top: 0  ;
+                left: 0;
+            }
+
+            &:nth-child(2n) {
+                .icon {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+            .dash-wrap {
+       
+        width: 82px;
+        height: 82px;margin: 0 auto;}
+
+
+    }
+}

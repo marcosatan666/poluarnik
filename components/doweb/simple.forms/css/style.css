@@ -1,0 +1,79 @@
+div#formSucsess {
+    width: 100%;
+    max-width: 600px;
+    min-height: 300px;
+    color: #000;
+}
+
+div#formSucsess .popup {
+    display: block
+}
+
+div#formSucsess .popup .card {
+    border: none;
+    box-shadow: none
+}
+
+div#formSucsess .popup .card-header {
+    background: none;
+}
+
+div#formSucsess .popup {
+    padding: 40px 40px 60px;
+    width: 510px;
+    box-sizing: border-box;
+}
+
+div#formSucsess .popup.fancybox-content {
+    overflow: visible;
+    margin: 70px 0;
+}
+
+div#formSucsess .popup .title {
+    margin-bottom: 34px;
+    text-align: left;
+}
+
+div#formSucsess .popup .success-icon {
+    width: 83px;
+    height: 83px;
+    margin-bottom: 24px;
+}
+
+div#formSucsess .popup .form {
+    margin-top: 30px;
+}
+
+div#formSucsess .popup.popup-ok {
+    padding: 40px 40px 48px;
+}
+
+div#formSucsess .popup.popup-ok .title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div#formSucsess .popup.popup-ok .content {
+    margin-top: 16px;
+}
+
+div#formSucsess .popup.popup-contacts {
+    padding: 0;
+    width: 640px;
+}
+
+@media (max-width: 1024px) {
+    div#formSucsess .popup.fancybox-content {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    div#formSucsess .popup {
+        padding: 40px 20px;
+    }
+}
+
+.compensate-for-scrollbar {
+    margin-right: 0 !important;
+}

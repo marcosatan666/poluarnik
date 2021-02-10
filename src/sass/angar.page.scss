@@ -1,0 +1,111 @@
+@import 'conf.scss';
+@import 'style.scss';
+@import 'blocks/superstar.scss';
+@import 'blocks/angary_full-cycle.scss';
+@import 'blocks/pav_cost.scss';
+@import 'blocks/stages.scss';
+@import 'blocks/3d_visual.scss';
+@import 'blocks/delivery.scss';
+@import 'blocks/gallery.scss';
+@import 'blocks/excursions.scss';
+@import 'blocks/about.scss';
+@import 'blocks/our-clients.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/cost.scss';
+@import 'blocks/map.scss';
+@import 'blocks/comparison.scss';
+@import 'blocks/angar_visual.scss';
+@import 'blocks/angar_head_slider.scss';
+@import 'blocks/slide_items.scss';
+@import 'blocks/angar_slide_items.scss';
+@import 'blocks/angar_building.scss';
+@import 'blocks/angary_character.scss';
+
+/*only page*/
+
+.site-header {
+    background-image: url($dist_path+'images/angar_head_bg1.jpg');
+    min-height: 1000px;
+    .form-wrap {
+        margin-top:0
+    }
+}
+
+#superstar {
+    background-color: #e1eff8;
+    background-image: url($dist_path+'images/angar_star.png');
+    min-height: 884px;
+    @include respond-to(xs) {
+        min-height: 684px;
+    }
+}
+
+.cost {
+    min-height: 1100px;
+    padding-bottom: 0;
+    margin-bottom: -8rem;
+    .doc-img {
+        position: relative;
+        top: 285px;
+        left: -230px;
+    }
+    .title-img {
+        position: relative;
+        left: -110px;
+        top: 97px;
+    }
+    @include respond-to(xs) {
+        padding-top: 0;
+        min-height: 900px;
+        .section-title {
+            .c_orange {
+                font-size: 24px;
+            }
+            .h3 {
+                font-size: 17px;
+                text-transform: none
+            }
+        }
+        .title-img {
+            left: 0;
+            display: none
+        }
+    }
+}
+
+#excursions {
+    margin-bottom: 9rem;
+    @include respond-to(xs) {
+        margin-bottom: 90px;
+    }
+}
+
+#delivery {
+  
+    background-position: center 0;
+    background-size: 1900px;
+}
+
+#gallery {
+    
+    // padding-top: 12rem;
+    @include respond-to(xs) {
+        top: 2.66rem;
+        &:before {
+            display: none;
+        }
+    }
+    &:before {
+        // top: -55px;
+        background-color: #E1EFF8;
+    }
+}
+
+#d_visual {
+    top: 0
+}
+
+#slide_items {
+    background: #E1EFF8;
+}
+

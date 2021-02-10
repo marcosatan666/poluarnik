@@ -1,0 +1,116 @@
+@import '../conf.scss';
+#map {
+    padding-top: 6.6rem;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0;
+    .h1 {
+        position: relative;
+        text-transform: uppercase;
+        z-index: 99;
+    }
+    .form-wrap {
+        max-width: 350px;
+        position: relative;
+        background: $color-grey;
+        border-radius: 15px;
+        top: 100px;
+        left: 60px;
+        b {
+            display: inline-block;
+            width: 100%;
+            color: $color-blue;
+            font-size: 18px
+        }
+        .custom-control {
+            b,
+            a {
+                font-size: 14px
+            }
+        }
+    }
+    .fly-wrap {
+        position: absolute;
+        width: 100%;
+        max-width: 1180px;
+        margin-left: -80px;
+        margin-top: 101px;
+        z-index: 3;
+    }
+    .fly-box {
+        position: absolute;
+        left: 60.5%;
+        .form-wrap {
+            left: 0;
+        }
+    }
+    .next-form-wrap {
+        max-width: 400px;
+        padding: 2.85rem;
+        z-index: 100;
+        right: 0;
+        margin-top: -3.33rem;
+        i {
+            position: absolute;
+            margin-right: 15px;
+            flex-shrink: 0;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            min-width: 50px;
+            min-height: 50px;
+            border: 2px solid #ffa200;
+            border-radius: 50%;
+            margin-left: -70px
+        }
+        li {
+            list-style: none;
+            padding-left: 25px;
+            margin-bottom: 40px
+        }
+    }
+    #j-map {
+        height: 750px;
+        background-color: grey;
+        position: relative;
+        z-index: 1;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            background-image: url($dist_path+"images/png/map_head_bg.png");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 600px;
+            top: -350px;
+            z-index: 3;
+            background-repeat: no-repeat;
+        }
+    }
+    @include respond-to(xs) {
+        padding-top: 12.66rem;
+        .next-form-wrap {
+            float: none;
+            padding: 1.66rem;
+        }
+        .form-wrap {
+            b {
+                font-size: 13px
+            }
+        }
+        .btn-orange {
+            font-size: 14px;
+        }
+        .fly-box {
+            position: inherit;
+            left: 0;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+    }
+}

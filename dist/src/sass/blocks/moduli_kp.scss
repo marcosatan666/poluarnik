@@ -1,0 +1,64 @@
+@import '../conf.scss';
+
+#moduli_kp {
+
+    background-image: url($dist_path+'images/png/moduli/bear_bg.png');
+    min-height: 900px;
+
+
+    .section-title {
+        line-height: 1.1;
+        text-transform: uppercase;
+
+        .h3 {
+            font-weight: 700;
+            font-size: 31px;
+        }
+
+        .c_orange {
+            text-shadow: 0 5px 0 rgba(0, 0, 0, .1);
+            font-size: 62px;
+            font-weight: 900;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+    }
+
+    .section-title {
+        &:after {
+            font-size: 16px;
+            position: absolute;
+            width: 150px;
+            left: 410px;
+            top: 350px;
+            content: "";
+            position: absolute;
+            left: 0;
+            background: url($dist_path+"images/big_arrow.png") no-repeat 50% 50%/contain;
+            width: 200px;
+            height: 70px;
+            top: 68px; // -moz-transform: rotate(10deg);
+            // -webkit-transform: rotate(10deg);
+            // -o-transform: rotate(10deg);
+            // -ms-transform: rotate(10deg);
+            // transform: rotate(10deg);
+            -moz-transform: scale(1, 1);
+            -webkit-transform: scale(1, 1);
+            -o-transform: scale(1, 1);
+            transform: scale(1, 1);
+        }
+    }
+
+    .small {
+        font-size: 24px;
+        text-transform: none;
+        font-weight: 600;
+    }
+
+    .title-img position: relative;
+    left: 102px;
+
+
+
+
+}

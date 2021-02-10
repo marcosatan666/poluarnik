@@ -1,0 +1,115 @@
+.vachtovie-body {
+    .site-header {
+        background-position: center 0.66rem, center -4rem;
+    }
+    .good_wrapper {
+        padding: 8px;
+    }
+    #vacht_top_catalog {
+        padding-bottom: 0;
+        position: relative;
+        z-index: 9;
+    }
+    .title-img {
+        position: relative;
+        left: 3.66rem;
+        top: 10rem;
+        z-index: 999;
+    }
+    section.text-block {
+        position: relative;
+        z-index: 98;
+        margin-bottom: 0;
+    }
+    .cost {
+        padding-bottom: 0;
+        margin-bottom: -17rem;
+    }
+    #catalog .catalog .good_wrapper:nth-child(1) img,
+    #catalog .catalog .good_wrapper:nth-child(2) img {
+        position: relative;
+        top: 0;
+    }
+    #catalog .catalog .good_wrapper:nth-child(1) img {
+
+        top: 10px;
+
+    }
+    #catalog .catalog .good_wrapper:nth-child(4) img,
+    #catalog .catalog .good_wrapper:nth-child(5) img,
+    #catalog .catalog .good_wrapper:nth-child(6) img  {
+        position: relative;
+        top: 20px;
+    }
+    .catalog .good {
+   
+        .img-fluid {
+            max-width: 265px;
+            height: auto;
+        }
+    }
+
+    #catalog .img {
+        position: relative;
+        top: 20px;
+        min-height: 10rem;
+        max-height: 10rem;
+    }
+}
+
+#full-cycle .dash-wrap .icon.icon-step7 {
+    background-image: url('/local/dist/images/step7.png') !important;
+}
+
+#full-cycle .dash-wrap .icon.icon-step8 {
+    background-image: url('/local/dist/images/step8.png') !important;
+}
+
+
+#full-cycle .dash-wrap {
+
+    .icon {
+
+        &.icon-step1 {
+            background-image: url('/local/images/fullcycle/1.png') !important;
+            background-size: 50px;
+        }
+        &.icon-step2 {
+            background-image: url('/local/images/fullcycle/2.png') !important;
+            background-size: 50px;
+        }
+        &.icon-step3 {
+            background-image: url('/local/images/fullcycle/3.png') !important;
+            background-size: 50px;
+        }
+        &.icon-step4 {
+            background-image: url('/local/images/fullcycle/4.png') !important;
+            background-size: 50px;
+        }
+        &.icon-step5 {
+            background-image: url('/local/images/fullcycle/5.png') !important;
+            background-size: 50px;
+        }
+        &.icon-step6 {
+            background-image: url('/local/images/fullcycle/6.png') !important;
+            background-size: 50px;
+        }
+        &.icon-step7 {
+            background-image: url('/local/images/fullcycle/7.png') !important;
+            background-size: 50px;
+        }
+        &.icon-step8{
+            background-image: url('/local/images/fullcycle/8.png') !important;
+            background-size: 50px;
+        }
+
+
+
+
+
+    }
+}
+@import 'media-vacht';
+
+
+

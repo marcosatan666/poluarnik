@@ -1,0 +1,241 @@
+@import '../conf.scss';
+#angary_tent_character {
+    padding-top: 6.66rem;
+    background-color: #E3EFF7;
+    background-image: url($dist_path+'images/angar_chars_bg3.jpg');
+    padding-bottom: 8rem;
+    background-position: center -24rem;
+    position: relative;
+    z-index: 2;
+    .h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    @include respond-to(xs) {
+        padding-bottom: 1.66rem;
+        .comparison .card {
+            .card-body {
+                height: 280px;
+            }
+            .card-image {
+                top: 2rem;
+            }
+        }
+        .list-group-item {
+            text-align: left;
+            font-weight: normal;
+            &>div {
+                font-weight: 700;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.angary_tent_comparison {
+
+    .row {
+
+        background-color: #B8CCE0;
+
+    }
+    .col-md {
+        &:nth-child(1) {
+            background-image: url($dist_path+"images/card_head_r_bg.png");
+            position: relative;
+            background-size: cover;
+            background-position: -4.66rem;
+            background-repeat: no-repeat;
+            left: 0;
+            z-index: 9;
+        }
+
+        &:nth-child(2) {
+
+            position: relative;
+            left: -6.66rem;
+            margin-right: -6.66rem;
+            padding: 2.66rem 0 0 0;
+            background-color: #fff;
+        }
+
+        
+    }
+    .card {
+        border: none;
+        position: relative;
+        z-index: 1;
+        .shadow {
+            box-shadow: 6px 8px 44px rgba(0, 0, 0, 0.15);
+        }
+        .card-title {
+            text-align: center;
+            font-size: 24px;
+            color: $color-blue2;
+            font-weight: 700;
+            text-transform: uppercase
+        }
+        .card-body {
+            background-position: center -8px;
+        }
+        .card-image {
+            margin: 1.66rem auto;
+        }
+        .card-text {
+
+            padding: 5rem 0.66rem 0rem 6.66rem;
+
+        }
+        // p {
+        //     text-align: center;
+        //     font-weight: 500;
+        //     font-size: 16px;
+        //     padding: 0.66rem 0;
+        // }
+        .card-image {
+            position: absolute;
+            width: 350px;
+            margin: 3rem 0;
+            display: block;
+            z-index: 99;
+        }
+        .decor {
+            margin: 0;
+            display: block;
+        }
+        .card-body {
+            min-height: 360px;
+            background-repeat: no-repeat;
+            margin: 0 -15px;
+            border-radius: 0;
+            background-size: contain;
+            background-position: center -18px;
+            padding: 3.66rem 0;
+            border-top-right-radius: 8px;
+        }
+        .list-group-item {
+            font-weight: 600
+        }
+        &:not(:first-child) {
+            li {
+                padding-left: 6.66rem;
+            }
+        }
+        .list-group {
+            margin: 0;
+            li {
+                &:last-child {
+                    height: 4.66rem
+                }
+            }
+        }
+        .card-footer {
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            margin:0;
+            border-bottom-right-radius: 20px;
+            .btn {
+                width: 100%;
+                max-width: 320px
+            }
+            .price {
+                padding-left: 5.45rem;
+            }
+            .price_val {
+                font-size: 24px
+            }
+        }
+        &:nth-child(1) {
+            position: relative;
+            z-index: 3;
+            background: none;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 8px;
+            .card-title {
+                text-align: left;
+                max-width: 250px;
+                text-transform: uppercase;
+                font-size: 27px;
+                color: #1c4da2;
+            }
+            .list-group {
+                position: relative; // top: -242px;
+                text-align: right;
+                font-weight: normal;
+                margin: 0;
+                li {
+                    padding-right: 3.66rem;
+                } // li {
+                //     &:last-child {
+                //         padding-bottom: 1.66rem;
+                //     }
+                // }
+            }
+            .list-group-item {
+                font-weight: normal;
+            }
+            .card-body {
+                &:nth-child(1) {
+                    border-top-left-radius: 8px;
+                    min-height: 100%;
+                    background-position: center 0;
+                    padding: 5rem 0.66rem 6rem 6.66rem;
+                }
+            }
+            .card-footer {
+                background: none;
+                height: 242px
+            }
+        }
+        &:nth-child(2) {
+
+            padding: 2.66rem 0 0 0;
+          
+            .list-group {
+
+                margin: 0 0;
+
+
+            }
+
+            .card-footer {
+                border-bottom-left-radius: 20px !important;
+            }
+            border-bottom-left-radius: 20px !important;
+            border-top-right-radius: 0;
+            .card-body {
+                &:nth-child(1) {
+                    border-top-right-radius: 0px;
+                }
+            }
+        }
+        &:nth-child(3) {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 20px !important;
+            .card-footer {
+                border-bottom-right-radius: 20px !important;
+            }
+        }
+        @include respond-to(xs) {
+            &:not(:first-child) {
+                li {
+                    padding-left: 1.33rem;
+                }
+            }
+            .card-footer {
+                font-size: 18px;
+                font-weight: 600;
+                border: none;
+                margin: 0 -15px;
+                border-bottom-right-radius: 20px;
+                .price {
+                    padding-left: 0;
+                }
+                .price_val {
+                    font-size: 24px
+                }
+            }
+        }
+    }
+}

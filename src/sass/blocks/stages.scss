@@ -1,0 +1,61 @@
+@import '../conf.scss';
+#stages {
+    padding-top: 0;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 98;
+    .h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .super_int {
+        color: #fdfbfc;
+        position: relative;
+        z-index: 1;
+        top: 50px;
+        left: 15px;
+    }
+    .card {
+        border: 0;
+        background: none;
+        position: relative;
+        top: -45px;
+        // max-width: 33%;
+        .card-title {
+            font-size: 14px;
+            font-weight: 600
+        }
+        .card-img-top {
+            position: relative;
+            z-index: 2;
+            max-width: 340px;
+            height: 200px;
+            margin-bottom: 45px;
+        }
+        .card-text {
+            padding-right: 180px;
+        }
+        .card-body {
+            border-top: dotted 1px $color-orange;
+            &:before {
+                content: "";
+                min-width: 25px;
+                min-height: 25px;
+                background-color: $color-orange;
+                display: inline-block;
+                border-radius: 25px;
+                border: dashed 1px $color-light-grey;
+                position: absolute;
+                margin-top: -35px; // border-style: outset;
+            }
+        }
+    }
+}
+
+#stages .card-group:nth-child(4) .card:nth-child(1) {
+    // width: 33%;
+}
+
+#stages .card-group:nth-child(4) .card:nth-child(2) .card-body {
+    border: none
+}

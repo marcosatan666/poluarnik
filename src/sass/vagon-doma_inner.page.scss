@@ -1,0 +1,7 @@
+@import 'conf.scss';
+@include respond-to(xs) {
+    .site-header .head-text {
+        position: relative;
+        top: 0;
+    }
+}

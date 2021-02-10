@@ -1,0 +1,84 @@
+/*=============================================================*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,800,900&display=swap&subset=cyrillic");
+.site-footer {
+  font-size: 14px; }
+  .site-footer .navMiddle .n_link {
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 600; }
+    .site-footer .navMiddle .n_link:after {
+      margin-top: 2px;
+      margin-left: 8px;
+      background: #044587; }
+    .site-footer .navMiddle .n_link:nth-child(6):after {
+      display: none; }
+  .site-footer .navTop {
+    position: relative;
+    left: 25px; }
+    .site-footer .navTop .n_link {
+      font-size: 13px;
+      padding: 0 10px;
+      color: #000; }
+      .site-footer .navTop .n_link:after {
+        margin-top: 2px;
+        margin-left: 8px;
+        background: #f6faff; }
+  .site-footer .j-show-modal {
+    position: relative;
+    width: 250px;
+    left: 30px; }
+    .site-footer .j-show-modal .icon-gerb {
+      width: 30px;
+      height: 22px;
+      background-size: 22px;
+      position: relative;
+      top: 0.33rem;
+      left: 0.33rem; }
+  .site-footer .reky,
+  .site-footer .rekvizity {
+    font-size: 15px;
+    color: #7b7b7b; }
+  .site-footer .rekvizity {
+    position: relative;
+    left: 40px; }
+  .site-footer .social {
+    position: relative;
+    margin-top: -3.66rem; }
+  .site-footer .copyrights {
+    font-size: 13px;
+    color: #7b7b7b; }
+  .site-footer .tel .icon.icon-phone {
+    position: relative;
+    top: 7px;
+    left: -0.45rem;
+    width: 25px;
+    height: 30px;
+    background-size: 25px; }
+  @media only screen and (max-width: 667px) {
+    .site-footer .social {
+      position: relative;
+      margin-top: 0; }
+    .site-footer .rekvizity {
+      position: relative;
+      left: 0; }
+    .site-footer .j-show-modal {
+      left: 0;
+      margin-top: 1.66rem;
+      width: 320px; }
+    .site-footer .navMiddle .n_link {
+      padding: 0 10px 0 0;
+      display: block; }
+      .site-footer .navMiddle .n_link:after {
+        display: none; }
+    .site-footer .navTop {
+      left: 0; }
+      .site-footer .navTop .n_link {
+        padding: 0 10px 0 0;
+        display: block;
+        width: 100%; }
+        .site-footer .navTop .n_link:after {
+          display: none; }
+    .site-footer .tel {
+      padding-left: 1.66rem; }
+      .site-footer .tel .icon.icon-phone {
+        left: -1.33rem; } }

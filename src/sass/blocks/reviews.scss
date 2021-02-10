@@ -1,0 +1,145 @@
+@import '../conf.scss';
+$befHeight:400px;
+
+#reviews {
+    padding-top: 1.66rem;
+
+    .h1 {
+        text-transform: uppercase;
+    }
+
+    .wrap {
+        background-color: #d5e2ea;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        margin-top: -(($befHeight)-45);
+        background-image: url($dist_path+"images/png/review_before_bg.png");
+        width: 100%;
+        height: ($befHeight)-45;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        background-image: url($dist_path+"images/png/review_after_bg.png");
+        width: 100%;
+        height: ($befHeight)-45;
+    }
+
+    .j-fancy {
+        display: inline-block;
+        float: right;
+        border: solid 4px $color-blue
+    }
+
+    @include respond-to(xs) {
+        padding-top: 1.66rem;
+
+        .slick-prev,
+        .slick-next {
+            right: 0.66rem;
+
+            &:before {
+                font-size: 0;
+            }
+        }
+
+        .slick-prev {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 20px;
+            background-image: url($dist_path+"images/png/arrow_l.png");
+            background-repeat: no-repeat;
+            left: 0.66rem;
+            z-index: 99
+        }
+
+        .slick-next {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 20px;
+            background-image: url($dist_path+"images/png/arrow_r.png");
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.j-sliderReviews {
+    .cli_name {
+        color: $color-blue;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .review-body {
+        background-color: #fff;
+        padding: 60px;
+        border-radius: 25px;
+        min-height: 400px;
+        max-width: 100%;
+
+        .date {
+            font-weight: 700;
+            margin-bottom: 1.66rem
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 25px;
+        &:before {
+            display: none;
+        }
+    }
+
+   
+   
+
+    .slick-prev, .slick-prev:hover, .slick-prev:focus {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+        background-image: url($dist_path+"images/png/arrow_l.png");
+        background-repeat: no-repeat;
+        left: 91%;
+        z-index: 99
+    }
+
+    .slick-next,  .slick-next:hover, .slick-next:focus {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+        background-image: url($dist_path+"images/png/arrow_r.png");
+        background-repeat: no-repeat;
+        right: 0;
+    }
+
+    @include respond-to(xs) {
+        .review-body {
+            padding: 2.66rem 3.66rem;
+        }
+
+        .slick-prev,
+        .slick-next {
+            top: 50%;
+        }
+
+        .slick-prev {
+            left: 0.66rem;
+        }
+
+        .slick-next {
+            right: 0.66rem;
+        }
+
+    }
+}

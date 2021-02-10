@@ -1,0 +1,46 @@
+$size-orange: 55px;
+$size-h3: 1.63rem;
+
+@import 'conf.scss';
+.angar-body{
+    @import 'basis_media';
+
+    @include respond-to(xxl) {
+         .site-header {
+            .shine {
+                display: none;
+            }
+
+            // #slider_wrap {
+            //     top: -16rem;//temp
+            //     left: -345px;
+            // }
+
+            // div#j-angar_head_slider {
+            //     top: 35px;
+            //     max-height: 600px;//temp
+            //     & img {
+            //         max-width: 80%;
+            //     }
+            // }
+            // .slider-pager {
+            //     margin-top: -5rem;
+            //     .slide-title {
+            //         margin-top: 20px;
+            //     }
+            // }
+
+        }
+        
+        //excursions проблемы с 2 картинками
+        #excursions {
+
+        }
+    }
+}
+
+
+
+
+
+// @import 'media-angar-sandvichi';

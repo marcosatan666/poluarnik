@@ -1,0 +1,54 @@
+$env: "dist_view";
+@import 'conf.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'main.page.scss';
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background: #e8f3f9;
+    &.open_menu {
+        overflow: hidden !important;
+    }
+}
+a {
+    color: $color-blue
+}
+.c_orange {
+    color: $color-orange
+}
+.decor {
+    border: none;
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: $color-orange;
+    margin: 0 auto;
+}
+h1, .h1 {
+    font-size: 40px;
+
+      @include respond-to(sm) {
+
+    font-size: 21px;
+
+      }
+
+
+
+
+}
+.thumb-wrap {
+    img {
+        border-radius: 15px;
+        box-shadow: 6px 8px 44px 5px rgba(0, 0, 0, 0.15);
+    }
+}
+.container {
+    // border: solid 1px red
+}
+
+

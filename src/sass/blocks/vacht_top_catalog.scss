@@ -1,0 +1,94 @@
+@import '../conf.scss';
+#vacht_top_catalog {
+    padding-bottom: 3.66rem;
+    .h1 {
+        text-transform: uppercase;
+        .c_orange {
+            font-weight: 600;
+        }
+    }
+    .catalog {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .good {
+        // width: 360px;
+        box-shadow: 6px 8px 44px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        margin-top: 3.66rem;
+        margin-bottom: 6.66rem;
+        padding-top: 20px;
+        position: relative;
+        background: #fff url($dist_path+"images/png/card_header.png") no-repeat 0 0;
+        background-size: contain;
+        text-align: center;
+        @include respond-to(xs) {
+            width: 100%;
+            height: auto;
+            background-image: url($dist_path+"images/png/card_header.png");
+            background-size: contain;
+            margin-top: 0;
+            margin-bottom: 2.66rem;
+            .img {
+                max-width: 100%;
+            }
+        }
+    }
+    .title {
+        color: #1c4da2;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 auto 1.66rem auto;
+        max-width: 72%;
+        span {
+            color: #ffa200;
+            font-weight: 400;
+            display: block;
+        }
+    }
+    .btn {
+        margin-top: 0;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 321px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: 60px;
+    }
+    .img.top {
+        margin: 30px auto;
+    }
+    .img {
+        position: relative;
+        margin: 1.66rem 0;
+    }
+    .decor {
+        position: relative;
+        top: -8px;
+    }
+    .price {
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        margin: 0 -15px;
+        border-bottom-right-radius: 20px;
+        text-align: left;
+    }
+    .card-footer {
+        border-top: 0;
+    }
+}

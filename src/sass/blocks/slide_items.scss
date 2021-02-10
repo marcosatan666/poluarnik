@@ -1,0 +1,154 @@
+@import '../conf.scss';
+
+#slide_items {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 1;
+
+    .container {
+        background-image: url($dist_path+"images/png/elips.png");
+        background-position: 96% 0;
+        background-repeat: no-repeat;
+    }
+
+    .h1 {
+        text-transform: uppercase;
+    }
+
+    .h5 {
+        font-weight: bold
+    }
+
+    .j-c_num {
+        font-size: 34px;
+        font-weight: bold
+    }
+
+    .item-pic {
+        margin-top: 60px;
+        max-width: 100%;
+    }
+
+    @include respond-to(xs) {
+        padding-top: 3.6rem;
+    }
+
+}
+
+#itemsSlider {
+
+    .slick-prev,
+    .slick-next {
+        top: -5px;
+        right: 1%;
+
+        &:before {
+            font-size: 0;
+        }
+
+    }
+
+    .slick-prev {
+        left: 94%;
+    }
+
+    .slick-prev {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+        background-image: url($dist_path+"images/png/arrow_l.png");
+        background-repeat: no-repeat;
+
+        // &:before {
+
+        //     width: 50px;
+        //     height: 20px;
+        //     background-image: url($dist_path+"images/png/strlk_l.png");
+        // }
+    }
+
+    .slick-next {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+        background-image: url($dist_path+"images/png/arrow_r.png");
+        background-repeat: no-repeat;
+        // &:before {
+
+        //     width: 50px;
+        //     height: 20px;
+        //     background-image: url($dist_path+"images/png/strlk_r.png");
+        // }
+    }
+
+
+    @include respond-to(xs) {
+
+          .slick-prev {left: 80%;}
+
+
+    }
+}
+
+
+
+
+#doubleSlider {
+
+    .slick-prev,
+    .slick-next {
+        top: -5px;
+        right: 1%;
+
+        &:before {
+            font-size: 0;
+        }
+
+    }
+
+    .slick-prev {
+        left: 94%;
+    }
+
+    .slick-prev {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+        background-image: url($dist_path+"images/png/arrow_l.png");
+        background-repeat: no-repeat;
+
+        // &:before {
+
+        //     width: 50px;
+        //     height: 20px;
+        //     background-image: url($dist_path+"images/png/strlk_l.png");
+        // }
+    }
+
+    .slick-next {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+        background-image: url($dist_path+"images/png/arrow_r.png");
+        background-repeat: no-repeat;
+        // &:before {
+
+        //     width: 50px;
+        //     height: 20px;
+        //     background-image: url($dist_path+"images/png/strlk_r.png");
+        // }
+    }
+
+
+    @include respond-to(xs) {
+
+          .slick-prev {left: 80%;}
+
+
+    }
+}
